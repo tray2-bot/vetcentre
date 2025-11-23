@@ -320,25 +320,6 @@ body {
 .banner-btn:hover {
   background-color: #030303;
 }
-/* Search Results */
-/* .results {
-    padding: 40px 20px;
-    background-color: #f1f1f1;
-}
-
-.results.hidden {
-    display: none;
-}
-
-.results ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.results li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-} */
 .services-container {
   width: 100%;
   padding: 20px;
@@ -347,6 +328,62 @@ body {
 .subtitle {
   color: #666;
   margin-bottom: 15px;
+}
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .banner-slider {
+    height: 70vh;
+  }
+  .banner-content h2 {
+    font-size: 2.2rem;
+  }
+  .banner-content p {
+    font-size: 1rem;
+  }
+  .banner-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .banner-slider {
+    height: 60vh;
+  }
+  .banner-content {
+    width: 90%;
+    top: 55%;
+  }
+  .banner-content h2 {
+    font-size: 1.8rem;
+  }
+  .banner-content p {
+    font-size: 0.95rem;
+  }
+  .banner-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .banner-slider {
+    height: 55vh;
+  }
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+  .banner-content p {
+    font-size: 0.85rem;
+  }
+  .banner-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
 }
 
 /* HORIZONTAL SCROLL WITHOUT JS */
@@ -2721,6 +2758,63 @@ footer {
   color: #030303;
 }
 
+
+/* ===================== Responsive Media Queries ===================== */
+
+/* ===================== Responsive Media Queries ===================== */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .cat-card {
+    min-width: 160px;
+    height: 160px; /* reduce overall card height */
+  }
+  .cat-card img {
+    height: 100px; /* smaller image */
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .cat-card {
+    min-width: 150px;
+    height: 150px;
+  }
+  .cat-card img {
+    height: 90px; 
+  }
+  .cat-card p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .cat-card {
+    min-width: 140px;
+    height: 140px;
+  }
+  .cat-card img {
+    height: 80px;
+  }
+  .cat-card p {
+    font-size: 13px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 360px) {
+  .cat-card {
+    min-width: 120px;
+    height: 130px;
+  }
+  .cat-card img {
+    height: 70px;
+  }
+  .cat-card p {
+    font-size: 12px;
+  }
+}
 /* PRESCRIPTION CORNER */
 /* === Section Layout === */
 .prescription-diets {
@@ -3479,19 +3573,6 @@ button:hover {
 .add-cart:hover{
     opacity: .7;
 }
-
-
-
-
- 
-
-
-
-
-
-
-
-
 /* ----------------- CART SLIDE PANEL ----------------- */
 .cart-overlay {
   position: fixed;
