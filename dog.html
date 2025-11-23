@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Center</title>
+
+  <!-- ICON LIBRARIES -->
+  <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+      <h1>VetCare Center</h1>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="top-right" id="desktopMenu">
+
+      <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+        <div class="dropdown-content">
+          <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+          <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+          <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+          <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+          <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+        </div>
+      </div>
+
+      <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+      <div class="dropdown">
+        <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+        <div class="dropdown-content">
+          <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+        </div>
+      </div>
+
+      <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+      <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <!-- CART IN MOBILE -->
+
+    <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+      <div class="mobile-dropdown-content">
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+        <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+        <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+        <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+      </div>
+    </div>
+
+    <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+      <div class="mobile-dropdown-content">
+        <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+    <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+  </div>
+
+  <!-- MAIN HEADER (SEARCH + ICONS) -->
+  <header class="main-header">
+    <div class="search-area">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+        <button id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+      <!-- CART - note the id used by JS -->
+      <div class="cart" id="cartIcon" title="Open cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER BANNER -->
+  <!-- Banner -->
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-text">
+        <div class="small">Everything for</div>
+        <h1 class="big">Dogs</h1>
+      </div>
+
+      <!-- right-side hero cat (replace src) -->
+      <img class="hero-cat" src="dog header.png" alt="cat" />
+    </div>
+  </header>
+
+  <!-- Categories row -->
+  <section class="categories">
+    <div class="category card green">
+      <div class="cat-text">
+        <h3>Dog treat & chews</h3>
+      </div>
+      <img class="cat-image" src="dog treat.png" alt="treats">
+    </div>
+
+    <div class="category card blue">
+      <div class="cat-text">
+        <h3>Dog grooming & care products</h3>
+      </div>
+      <img class="cat-image" src="dog grooming.png" alt="litter">
+    </div>
+
+    <div class="category card purple">
+      <div class="cat-text">
+        <h3>Dog toys</h3>
+      </div>
+      <img class="cat-image" src="dog playing.png" alt="toys">
+    </div>
+  </section>
+
+  <!-- =====================================================
+                     WET FOOD (7 ITEMS)
+===================================================== -->
+  <!-- PRODUCT GRID (wet food sample items) -->
+  <section class="category">
+    <h2 class="section-title">Wet Food</h2>
+  </section>
+
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="wet-product" data-id="p1" data-title="Ziwi Peak Dog Originals Wet Food" data-price="5000">
+      <div class="img-box">
+        <img src="Ziwi Peak Dog Originals Wet Food.png" alt="Ziwi Peak">
+      </div>
+      <h3 class="wet-title">Ziwi Peak Dog Originals Wet Food</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Natural & Nutritious Dog Food Edgard & Cooper.png"></div>
+      <h3 class="wet-title">Edgard & Cooper Natural & Nutritious</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Hill's Science Diet Perfect Weight.png"></div>
+      <h3 class="wet-title">Hill's Science Diet Perfect Weight</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Amazon Brand Wag Pate Grain Free Canned Dog Food .png"></div>
+      <h3 class="wet-title">Amazon Brand Wag Pate Grain Free Canned</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Save on Rachael Ray Nutrish Natural Pate Beef & Pumpkin.png"></div>
+      <h3 class="wet-title">Rachael Ray Nutrish Natural Pate Beef</h3>
+      <div class="price-and-cart">
+        <p class="price">₦4,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Cesar Country Stew Adult Wet.png"></div>
+      <h3 class="wet-title">Cesar Country Stew Adult Food</h3>
+      <div class="price-and-cart">
+        <p class="price">₦7,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product">
+      <div class="img-box"><img src="Purina Smartblend Instinct Tender Wild Caught.png"></div>
+      <h3 class="wet-title">Purina Smartblend Instinct Tender Wild</h3>
+      <div class="price-and-cart">
+        <p class="price">₦8,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+     DRY FOOD (7 items)
+=========================== -->
+  <section class="category">
+    <h2>Dry Food</h2>
+  </section>
+
+  <div class="product-grid">
+    <div class="wet-product" data-id="dry1" data-title="Redbarn Air-Dried Dog Food - Lamb & Fish" data-price="8000">
+      <div class="img-box"><img src="Redbarn Air-Dried Dog Food - Lamb & Fish.png"
+          alt="Redbarn Air-Dried Dog Food - Lamb & Fish"></div>
+      <h3>Redbarn Air-Dried Dog Food - Lamb & Fish</h3>
+      <div class="price-and-cart">
+        <p class="price">₦8,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry2" data-title="Nutrish Whole Health Blend" data-price="9000">
+      <div class="img-box"><img src="Nutrish Whole Health Blend.png" alt="Nutrish Whole Health Blend"></div>
+      <h3>Nutrish Whole Health Blend</h3>
+      <div class="price-and-cart">
+        <p class="price">₦9,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry3" data-title="VICTOR Super Premium Dog Food – Multi-Pro Dry Canine Food"
+      data-price="10000">
+      <div class="img-box"><img src="VICTOR Super Premium Dog Food.png" alt="VICTOR Super Premium Dog Food"></div>
+      <h3>VICTOR Super Premium Dog Food</h3>
+      <div class="price-and-cart">
+        <p class="price">₦10,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry4" data-title="Solid Gold Air Dried Dog Food Toppers for Dry Food"
+      data-price="1100">
+      <div class="img-box"><img src="Solid Gold Air Dried Dog Food Toppers for Dry Food.png"
+          alt="Solid Gold Air Dried Dog Food Toppers"></div>
+      <h3>Solid Gold Air Dried Dog Food Toppers</h3>
+      <div class="price-and-cart">
+        <p class="price">₦1,100</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry5" data-title="Pedigree Small Dog Grilled Steak & Vegetable Dry Dog Food"
+      data-price="12000">
+      <div class="img-box"><img src="Pedigree Small Dog Grilled Steak & Vegetable Dry Dog Food.png"
+          alt="Pedigree Small Dog"></div>
+      <h3>Pedigree Small Dog Grilled Steak</h3>
+      <div class="price-and-cart">
+        <p class="price">₦12,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry6" data-title="Royal Canin Size Health Nutrition Medium" data-price="1400">
+      <div class="img-box"><img src="Royal Canin Size Health Nutrition Medium.png"
+          alt="Royal Canin Size Health Nutrition Medium"></div>
+      <h3>Royal Canin Size Health Nutrition Medium</h3>
+      <div class="price-and-cart">
+        <p class="price">₦1,400</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="dry7" data-title="Brit Premium by Nature Sport 15kg" data-price="1500">
+      <div class="img-box"><img src="Brit Premium by Nature Sport 15kg.png" alt="Brit Premium by Nature Sport 15kg">
+      </div>
+      <h3>Brit Premium by Nature Sport 15kg</h3>
+      <div class="price-and-cart">
+        <p class="price">₦1,500</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+     TREATS (7 items)
+=========================== -->
+  <section class="category">
+    <h2>Treats</h2>
+  </section>
+
+  <div class="product-grid">
+    <div class="wet-product" data-id="treat1" data-title="Milk-Bone MaroSnacks Small Dog Treats With Bone Marrow"
+      data-price="4000">
+      <div class="img-box"><img src="Milk-Bone MaroSnacks Small Dog Treats With Bone Marrow.png"
+          alt="Milk-Bone MaroSnacks"></div>
+      <h3>Milk-Bone MaroSnacks Small Dog Treats</h3>
+      <div class="price-and-cart">
+        <p class="price">₦4,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat2" data-title="GALLETA NATURAL SELECT POLLO BOMB X 454 GR" data-price="5000">
+      <div class="img-box"><img src="GALLETA NATURAL SELECT POLLO BOMB X 454 GR.png" alt="Galleta Natural Select"></div>
+      <h3>GALLETA NATURAL SELECT POLLO BOMB</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat3" data-title="CHUNKY DELIDOG BONE 170 GR" data-price="5000">
+      <div class="img-box"><img src="CHUNKY DELIDOG BONE 170 GR.png" alt="Chunky Delidog Bone"></div>
+      <h3>CHUNKY DELIDOG BONE 170 GR</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat4" data-title="Pet Expert multi dog snack" data-price="6000">
+      <div class="img-box"><img src="Pet Expert multi dog snack.png" alt="Pet Expert snack"></div>
+      <h3>Pet Expert multi dog snack</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat5" data-title="Purina Beggin' Bacon Cheddar & Monterey Jack"
+      data-price="3000">
+      <div class="img-box"><img src="Purina Beggin' Bacon Cheddar & Monterey Jack .png" alt="Purina Beggin'"></div>
+      <h3>Purina Beggin' Bacon Cheddar</h3>
+      <div class="price-and-cart">
+        <p class="price">₦3,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat6" data-title="Farmland Traditions Dogs Love Chicken Jerky"
+      data-price="4000">
+      <div class="img-box"><img src="Farmland Traditions Dogs Love Chicken Jerky .png" alt="Farmland Chicken Jerky">
+      </div>
+      <h3>Farmland Traditions Chicken Jerky</h3>
+      <div class="price-and-cart">
+        <p class="price">₦4,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="treat7" data-title="Merrick Kitchen Bites All Natural Grain Free Gluten Free"
+      data-price="7000">
+      <div class="img-box"><img src="Merrick Kitchen Bites All Natural Grain Free Gluten Free .png"
+          alt="Merrick Kitchen Bites"></div>
+      <h3>Merrick Kitchen Bites All Natural</h3>
+      <div class="price-and-cart">
+        <p class="price">₦7,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+     BEDS & LITTERS (7 items)
+=========================== -->
+  <section class="category">
+    <h2>Beds & Litters</h2>
+  </section>
+
+  <div class="product-grid">
+    <div class="wet-product" data-id="bed1" data-title="Cozy Dog Bed Cave – Soft Warming Sleeping Bag"
+      data-price="1800">
+      <div class="img-box"><img src="Cozy Cat Bed Cave – Soft Warming Sleeping Bag.png" alt="Cozy Dog Bed Cave"></div>
+      <h3>Cozy Dog Bed Cave – Soft Warming Bag</h3>
+      <div class="price-and-cart">
+        <p class="price">₦1,800</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed2" data-title="Soft And Durable Pet Bed Claw Donut A Cozy Haven"
+      data-price="2000">
+      <div class="img-box"><img src="Soft And Durable Pet Bed Claw Donut A Cozy Haven.png"
+          alt="Soft And Durable Pet Bed"></div>
+      <h3>Soft And Durable Pet Bed Claw Donut</h3>
+      <div class="price-and-cart">
+        <p class="price">₦2,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed3" data-title="Nature's Eco Tofu Soya Clumping Cat Litter" data-price="2200">
+      <div class="img-box"><img src="Nature's Eco Tofu Soya Clumping Cat Litter.png" alt="Nature's Eco Tofu"></div>
+      <h3>Nature's Eco Tofu Soya Clumping Dogs Litter</h3>
+      <div class="price-and-cart">
+        <p class="price">₦2,200</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed4" data-title="DoggieLawn Real Grass Puppy Litter" data-price="2300">
+      <div class="img-box"><img src="DoggieLawn Real Grass Puppy .png" alt="DoggieLawn Real Grass Puppy"></div>
+      <h3>DoggieLawn Real Grass Puppy Litter</h3>
+      <div class="price-and-cart">
+        <p class="price">₦2,300</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed5" data-title="Aspen Pet Self-Warming Bolster Bed" data-price="2500">
+      <div class="img-box"><img src="Aspen Pet Self‑Warming Bolster Bed.png" alt="Aspen Pet Bolster Bed"></div>
+      <h3>Aspen Pet Self-Warming Bolster Bed</h3>
+      <div class="price-and-cart">
+        <p class="price">₦2,500</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed6" data-title="Barney Fur in Paddington" data-price="2800">
+      <div class="img-box"><img src="Barney Fur in Paddington.png" alt="Barney Fur"></div>
+      <h3>Barney Fur in Paddington</h3>
+      <div class="price-and-cart">
+        <p class="price">₦2,800</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="bed7" data-title="Amazon Basics Tall Open Top Cat Litter Box" data-price="3500">
+      <div class="img-box"><img src="Amazon Basics Tall Open Top Cat Litter Box.png" alt="Amazon Basics Litter Box">
+      </div>
+      <h3>Amazon Basics Tall Dog Litter Box</h3>
+      <div class="price-and-cart">
+        <p class="price">₦3,500</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+     TOYS (7 items)
+=========================== -->
+  <section class="category">
+    <h2>Toys</h2>
+  </section>
+
+  <div class="product-grid">
+    <div class="wet-product" data-id="toy1" data-title="Interactive Dog Treat Ball for Teeth Cleaning"
+      data-price="7000">
+      <div class="img-box"><img src="Interactive Dog Treat Ball for Teeth Cleaning.png"
+          alt="Interactive Dog Treat Ball"></div>
+      <h3>Interactive Dog Treat Ball for Teeth Cleaning</h3>
+      <div class="price-and-cart">
+        <p class="price">₦7,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="toy2" data-title="Premium Dog Bone Toys" data-price="5000">
+      <div class="img-box"><img src="Premium Dog Bone Toys.png" alt="Premium Dog Bone Toys"></div>
+      <h3>Premium Dog Bone Toys</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="toy3" data-title="Fable Dog Toys" data-price="9000">
+      <div class="img-box"><img src="Fable Dog Toys.png" alt="Fable Dog Toys"></div>
+      <h3>Premium Fable Dog Toys</h3>
+      <div class="price-and-cart">
+        <p class="price">₦9,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="toy4" data-title="PetSafe Large Sportsmen Nobbly Nubbly" data-price="6000">
+      <div class="img-box"><img src="PetSafe Large Sportsmen Nobbly Nubbly.png" alt="PetSafe Nobbly Nubbly"></div>
+      <h3>PetSafe Sportsmen Nobbly Nubbly</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="toy5" data-title="Colorful Rope Ball Dog Toy" data-price="8000">
+      <div class="img-box"><img src="Colorful Rope Ball Cat Toy.png" alt="Colorful Rope Ball"></div>
+      <h3>Colorful Rope Ball Dog Toy</h3>
+      <div class="price-and-cart">
+        <p class="price">₦8,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="toy6" data-title="PETLIBRO Interactive Dog Toy" data-price="10000">
+      <div class="img-box"><img src="PETLIBRO Interactive Cat Toys.png" alt="PETLIBRO Interactive Toy"></div>
+      <h3>PETLIBRO Interactive Dog Toy</h3>
+      <div class="price-and-cart">
+        <p class="price">₦10,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product" data-id="toy7" data-title="Whisker City Squid Kicker Dog Toy" data-price="12000">
+      <div class="img-box"><img src="Whisker City Squid Kicker Cat Toy.png" alt="Whisker City Squid Kicker"></div>
+      <h3>Whisker City Squid Kicker Dog Toy</h3>
+      <div class="price-and-cart">
+        <p class="price">₦12,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+     LEASH & COLLARS (opening)
+=========================== -->
+  <section class="category">
+    <h2>Leash & Collars</h2>
+  </section>
+
+  <div class="product-grid">
+    <!-- add leash & collar items here (I left this empty like you did) -->
+    <div class="wet-product" data-id="l1" data-title="Hepper Hemp Breakaway Cat Collar" data-price="6000">
+      <div class="img-box"><img src="Hepper Hemp Breakaway Cat Collar.png" alt=""></div>
+      <h3 class="wet-title">Hepper Hemp Breakaway Cat Collar</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l2" data-title="Red Dingo Nylon Reflective Breakaway Collar" data-price="7000">
+      <div class="img-box"><img src="Red Dingo Nylon Reflective Breakaway Collar.png" alt=""></div>
+      <h3 class="wet-title">Red Dingo Nylon Reflective Breakaway</h3>
+      <div class="price-and-cart">
+        <p class="price">₦7,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l3" data-title="GoTags Personalized Breakaway Collar with Bell"
+      data-price="10000">
+      <div class="img-box"><img src="GoTags Personalized Breakaway Collar with Bell.png" alt=""></div>
+      <h3 class="wet-title">GoTags Personalized Breakaway with Bell</h3>
+      <div class="price-and-cart">
+        <p class="price">₦10,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l4" data-title="Bayer Seresto Cat Flea Collar" data-price="8000">
+      <div class="img-box"><img src="Bayer Seresto Cat Flea Collar.png" alt=""></div>
+      <h3 class="wet-title">Bayer Seresto Cat Flea Collar</h3>
+      <div class="price-and-cart">
+        <p class="price">₦8,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l5" data-title="Standard Flat Leash + Harness" data-price="9000">
+      <div class="img-box"><img src="Standard Flat Leash + Harness.png" alt=""></div>
+      <h3 class="wet-title">Standard Flat Leash + Harness</h3>
+      <div class="price-and-cart">
+        <p class="price">₦9,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l6" data-title="Bungee / Elastic Leash" data-price="5000">
+      <div class="img-box"><img src="Bungee .png" alt=""></div>
+      <h3 class="wet-title">Strong Bungee / Elastic Leash</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="l7" data-title="Long-Line / Long Leash" data-price="12000">
+      <div class="img-box"><img src="Long-Line .png" alt=""></div>
+      <h3 class="wet-title">Strong Long-Line / Long Leash</h3>
+      <div class="price-and-cart">
+        <p class="price">₦12,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="wet-product" data-id="o1" data-title="Adorable Christmas Dog Costume" data-price="5000">
+      <div class="img-box"><img src="Adorable Christmas Dog Costume.png" alt=""></div>
+      <h3 class="wet-title">Adorable Christmas Dog Costume</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o2" data-title="Striped Pattern Pet Jumpsuit, Cartoon Bear" data-price="8000">
+      <div class="img-box"><img src="Striped Pattern Pet Jumpsuit, Cartoon Bear.png" alt=""></div>
+      <h3 class="wet-title">Striped Pattern Pet Jumpsuit, Cartoon Bear</h3>
+      <div class="price-and-cart">
+        <p class="price">₦8,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o3" data-title="Handmade Dog Sweater, Cozy Knitted Pet Clothing"
+      data-price="6000">
+      <div class="img-box"><img src="Handmade Dog Sweater,Cozy Knitted Pet Clothing.png" alt=""></div>
+      <h3 class="wet-title">Handmade Dog Sweater, Cozy Knitted Wear</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o4" data-title="Pet Spring/Summer Love Hollow Tank Top" data-price="7000">
+      <div class="img-box"><img src="tank top.png" alt=""></div>
+      <h3 class="wet-title">Pet Spring/Summer Love Hollow Tank Top</h3>
+      <div class="price-and-cart">
+        <p class="price">₦7,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o5" data-title="Dog Clothes Waterproof Pet Coat With Harness" data-price="5000">
+      <div class="img-box"><img src="Dog Clothes Waterproof Pet Coat With Harness.png" alt=""></div>
+      <h3 class="wet-title">Dog Clothes Waterproof Pet Coat With Harness</h3>
+      <div class="price-and-cart">
+        <p class="price">₦5,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o6" data-title="Solid Color Pet Hoodie" data-price="6000">
+      <div class="img-box"><img src="Solid Color Pet Hoodie.png" alt=""></div>
+      <h3 class="wet-title">Solid Color Pet Hoodie Clothing</h3>
+      <div class="price-and-cart">
+        <p class="price">₦6,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="wet-product" data-id="o7" data-title="Cotton Mesh Dog Polo Shirt | Ralph Lauren" data-price="10000">
+      <div class="img-box"><img src="Cotton Mesh Dog Polo Shirt Ralph Lauren.png" alt=""></div>
+      <h3 class="wet-title">Cotton Mesh Dog Polo Shirt | Ralph Lauren</h3>
+      <div class="price-and-cart">
+        <p class="price">₦10,000</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+      <div class="cart-header">
+        <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+        <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <!-- JS will inject cart items here -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="subtotal-row">
+          <p class="subtotal-label">SUBTOTAL:</p>
+          <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+        </div>
+
+        <a href="#" class="coupon-link">Have a Coupon?</a>
+
+        <div class="cart-buttons">
+          <button class="view-cart-btn">VIEW CART</button>
+          <button class="checkout-btn">CHECKOUT →</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Search Results -->
+    <section id="searchResults" class="results hidden">
+      <h3>Search Results</h3>
+      <ul id="resultList"></ul>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

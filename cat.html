@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Center</title>
+
+  <!-- ICON LIBRARIES -->
+  <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+      <h1>VetCare Center</h1>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="top-right" id="desktopMenu">
+
+      <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+        <div class="dropdown-content">
+          <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+          <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+          <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+          <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+          <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+        </div>
+      </div>
+
+      <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+      <div class="dropdown">
+        <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+        <div class="dropdown-content">
+          <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+        </div>
+      </div>
+
+      <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+      <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <!-- CART IN MOBILE -->
+
+    <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+      <div class="mobile-dropdown-content">
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+        <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+        <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+        <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+      </div>
+    </div>
+
+    <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+      <div class="mobile-dropdown-content">
+        <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+    <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+  </div>
+
+  <!-- MAIN HEADER (SEARCH + ICONS) -->
+  <header class="main-header">
+    <div class="search-area">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+        <button id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+     <!-- CART - note the id used by JS -->
+      <div class="cart" id="cartIcon" title="Open cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+    <!-- HEADER BANNER -->
+    <!-- Banner -->
+    <header class="banner">
+      <div class="banner-inner">
+        <div class="banner-text">
+          <div class="small">Everything for</div>
+          <h1 class="big">Cats</h1>
+        </div>
+
+        <!-- right-side hero cat (replace src) -->
+        <img class="hero-cat" src="cat header.png" alt="cat" />
+      </div>
+    </header>
+
+    <!-- Categories row -->
+    <section class="categories">
+      <div class="category cardss green">
+        <div class="cat-text">
+          <h3>Cat treats and snacks</h3>
+        </div>
+        <img class="cat-image" src="cat treat.png" alt="treats">
+      </div>
+
+      <div class="category cardss blue">
+        <div class="cat-text">
+          <h3>Cat litter boxes and litter trays</h3>
+        </div>
+        <img class="cat-image" src="cat litter box.png" alt="litter">
+      </div>
+
+      <div class="category cardss purple">
+        <div class="cat-text">
+          <h3>Cat toys</h3>
+        </div>
+        <img class="cat-image" src="cat paly.png" alt="toys">
+      </div>
+    </section>
+
+
+
+<!-- ================================
+         1. Wet Food
+================================ -->
+<section class="category">
+  <h2 class="section-title">Wet Food</h2>
+</section>
+
+<div class="product-grid" id="wetFoodGrid">
+  <div class="wet-product" data-id="wf1" data-title="Fancy Feast Gravy Lovers Poultry & Beef" data-price="5000">
+    <div class="img-box"><img src="fancy cat.png" alt="Fancy Feast Gravy Lovers Poultry & Beef"></div>
+    <h3 class="wet-title">Fancy Feast Gravy Lovers Poultry & Beef</h3>
+    <div class="price-and-cart">
+      <p class="price">₦5,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf2" data-title="Sheba Perfect Portions Cuts in Gravy" data-price="6000">
+    <div class="img-box"><img src="Sheba Perfect Portions Cuts in Gravy.png" alt="Sheba Perfect Portions Cuts in Gravy"></div>
+    <h3 class="wet-title">Sheba Perfect Portions Cuts in Gravy</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf3" data-title="Friskies Shreds in Gravy Variety" data-price="6000">
+    <div class="img-box"><img src="Friskies Shreds in Gravy Variety.jpg" alt="Friskies Shreds in Gravy Variety"></div>
+    <h3 class="wet-title">Friskies Shreds in Gravy Variety</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf4" data-title="Tiki Cat After Dark Chicken in Consommé" data-price="6000">
+    <div class="img-box"><img src="Tiki Cat After Dark Chicken in Consomm.png" alt="Tiki Cat After Dark Chicken in Consommé"></div>
+    <h3 class="wet-title">Tiki Cat After Dark Chicken in Consommé</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf5" data-title="Ziwi Peak Daily Cat Cuisine Lamb" data-price="4000">
+    <div class="img-box"><img src="Ziwi Peak Daily Cat Cuisine Lamb.png" alt="Ziwi Peak Daily Cat Cuisine Lamb"></div>
+    <h3 class="wet-title">Ziwi Peak Daily Cat Cuisine Lamb</h3>
+    <div class="price-and-cart">
+      <p class="price">₦4,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf6" data-title="Weruva Cats in the Kitchen Chicken" data-price="7000">
+    <div class="img-box"><img src="Weruva Cats in the Kitchen Chicken Frick-a-Zee.png" alt="Weruva Cats in the Kitchen Chicken"></div>
+    <h3 class="wet-title">Weruva Cats in the Kitchen Chicken</h3>
+    <div class="price-and-cart">
+      <p class="price">₦7,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="wf7" data-title="Hill’s Science Diet Adult Savory Chicken Entree" data-price="8000">
+    <div class="img-box"><img src="hills cat wet food.png" alt="Hill’s Science Diet Adult Savory Chicken Entree"></div>
+    <h3 class="wet-title">Hill’s Science Diet Adult Savory Chicken Entree</h3>
+    <div class="price-and-cart">
+      <p class="price">₦8,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+         2. Dry Food
+================================ -->
+<section class="category">
+  <h2 class="section-title">Dry Food</h2>
+</section>
+
+<div class="product-grid" id="dryFoodGrid">
+  <div class="wet-product" data-id="df1" data-title="Orijen Original Dry Cat Food" data-price="8000">
+    <div class="img-box"><img src="Orijen Original Dry Cat Food.png" alt="Orijen Original Dry Cat Food"></div>
+    <h3 class="wet-title">Orijen Original Dry Cat Food</h3>
+    <div class="price-and-cart">
+      <p class="price">₦8,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df2" data-title="Dr. Elsey’s Cleanprotein Chicken Formula" data-price="9000">
+    <div class="img-box"><img src="Dr. Elsey’s Cleanprotein Chicken Formula.png" alt="Dr. Elsey’s Cleanprotein Chicken Formula"></div>
+    <h3 class="wet-title">Dr. Elsey’s Cleanprotein Chicken Formula</h3>
+    <div class="price-and-cart">
+      <p class="price">₦9,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df3" data-title="Blue Buffalo Wilderness Mature" data-price="10000">
+    <div class="img-box"><img src="Blue Buffalo Wilderness Mature.png" alt="Blue Buffalo Wilderness Mature"></div>
+    <h3 class="wet-title">Blue Buffalo Wilderness Mature</h3>
+    <div class="price-and-cart">
+      <p class="price">₦10,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df4" data-title="Purina One Indoor Advantage" data-price="11000">
+    <div class="img-box"><img src="Purina One Indoor Advantage.png" alt="Purina One Indoor Advantage"></div>
+    <h3 class="wet-title">Purina One Indoor Advantage</h3>
+    <div class="price-and-cart">
+      <p class="price">₦11,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df5" data-title="ZIWI Peak Air-Dried Cat Food" data-price="12000">
+    <div class="img-box"><img src="ZIWI Peak Air-Dried Cat Food.png" alt="ZIWI Peak Air-Dried Cat Food"></div>
+    <h3 class="wet-title">ZIWI Peak Air-Dried Cat Food</h3>
+    <div class="price-and-cart">
+      <p class="price">₦12,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df6" data-title="Open Farm Wild‑Caught Salmon Recipe" data-price="14000">
+    <div class="img-box"><img src="Open Farm Wild‑Caught Salmon Recipe.png" alt="Open Farm Wild‑Caught Salmon Recipe"></div>
+    <h3 class="wet-title">Open Farm Wild‑Caught Salmon Recipe</h3>
+    <div class="price-and-cart">
+      <p class="price">₦14,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="df7" data-title="Whiskas Indoor Dry Food For Cats, Chicken Flavor" data-price="15000">
+    <div class="img-box"><img src="Whiskas Indoor Dry Food For Cats, Chicken Flavor.png" alt="Whiskas Indoor Dry Food For Cats, Chicken Flavor"></div>
+    <h3 class="wet-title">Whiskas Indoor Dry Food For Cats</h3>
+    <div class="price-and-cart">
+      <p class="price">₦15,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+         3. Treats & Toys
+================================ -->
+<section class="category">
+  <h2 class="section-title">Treats & Toys</h2>
+</section>
+
+<div class="product-grid" id="treatsGrid">
+  <div class="wet-product" data-id="t1" data-title="Cat Teaser Toy" data-price="7000">
+    <div class="img-box"><img src="Cat Teaser Toy.png" alt="Cat Teaser Toy"></div>
+    <h3 class="wet-title">Cat Teaser Toy</h3>
+    <div class="price-and-cart">
+      <p class="price">₦7,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="t2" data-title="Farmhouse & Industrial Cat Condos That Conceal Litter Boxes" data-price="5000">
+    <div class="img-box"><img src="Farmhouse & Industrial Cat Condos That Conceal Litter Boxes.png" alt="Farmhouse & Industrial Cat Condos That Conceal Litter Boxes"></div>
+    <h3 class="wet-title">Farmhouse & Industrial</h3>
+    <div class="price-and-cart">
+      <p class="price">₦5,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="t3" data-title="Mouse Cat Toy Set" data-price="9000">
+    <div class="img-box"><img src="Mouse Cat Toy Set.png" alt="Mouse Cat Toy Set"></div>
+    <h3 class="wet-title">Mouse Cat Toy Set</h3>
+    <div class="price-and-cart">
+      <p class="price">₦9,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+  <div class="wet-product" data-id="t4" data-title="Fish Shaped Pet Plush Toy" data-price="6000">
+    <div class="img-box"><img src="Fish Shaped Pet Plush Toy.png" alt="Fish Shaped Pet Plush Toy"></div>
+    <h3 class="wet-title">Fish Shaped Pet Plush</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="t5" data-title="Colorful Rope Ball Cat Toy" data-price="8000">
+    <div class="img-box"><img src="Colorful Rope Ball Cat Toy.png" alt="Colorful Rope Ball Cat Toy"></div>
+    <h3 class="wet-title">Colorful Rope Ball</h3>
+    <div class="price-and-cart">
+      <p class="price">₦8,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="t6" data-title="PETLIBRO Interactive Cat Toy" data-price="10000">
+    <div class="img-box"><img src="PETLIBRO Interactive Cat Toys.png" alt="PETLIBRO Interactive Cat Toy"></div>
+    <h3 class="wet-title">PETLIBRO Interactive</h3>
+    <div class="price-and-cart">
+      <p class="price">₦10,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="t7" data-title="Whisker City Squid Kicker Cat Toy" data-price="12000">
+    <div class="img-box"><img src="Whisker City Squid Kicker Cat Toy.png" alt="Whisker City Squid Kicker Cat Toy"></div>
+    <h3 class="wet-title">Whisker City Squid</h3>
+    <div class="price-and-cart">
+      <p class="price">₦12,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+         4. Pet Clothing / Outfits
+================================ -->
+<section class="category">
+  <h2 class="section-title">Pet Clothing & Outfits</h2>
+</section>
+
+<div class="product-grid" id="petClothingGrid">
+  <div class="wet-product" data-id="c1" data-title="Plush Bunny Cat Sweater" data-price="5000">
+    <div class="img-box"><img src="Plush Bunny Cat Sweater.png" alt="Plush Bunny Cat Sweater"></div>
+    <h3 class="wet-title">Plush Bunny Cat Sweater</h3>
+    <div class="price-and-cart">
+      <p class="price">₦5,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c2" data-title="Yaopelky 2pcs Cat Winter Clothes" data-price="8000">
+    <div class="img-box"><img src="Yaopelky 2pcs Cat Winter Clothes.png" alt="Yaopelky 2pcs Cat Winter Clothes"></div>
+    <h3 class="wet-title">Yaopelky 2pcs Cat Winter Clothes</h3>
+    <div class="price-and-cart">
+      <p class="price">₦8,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c3" data-title="Classic Plaid Cat Vest" data-price="6000">
+    <div class="img-box"><img src="Classic Plaid Dog Vest.png" alt="Classic Plaid Cat Vest"></div>
+    <h3 class="wet-title">Classic Plaid Cat Vest For Cats</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c4" data-title="Kitty Hat & Cape Outfit" data-price="7000">
+    <div class="img-box"><img src="Kitty Hat & Cape Outfit.png" alt="Kitty Hat & Cape Outfit"></div>
+    <h3 class="wet-title">Kitty Hat & Cape Outfit For Cats</h3>
+    <div class="price-and-cart">
+      <p class="price">₦7,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c5" data-title="High‑Neck Arctic Fleece Cat Sweater" data-price="5000">
+    <div class="img-box"><img src="High‑Neck Arctic Fleece Cat Sweater.png" alt="High‑Neck Arctic Fleece Cat Sweater"></div>
+    <h3 class="wet-title">High‑Neck Arctic Fleece Cat Sweater</h3>
+    <div class="price-and-cart">
+      <p class="price">₦5,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c6" data-title="Classic Pullover Cat Sweater" data-price="6000">
+    <div class="img-box"><img src="Classic Pullover Cat Sweater.png" alt="Classic Pullover Cat Sweater"></div>
+    <h3 class="wet-title">Classic Pullover Cat Sweater</h3>
+    <div class="price-and-cart">
+      <p class="price">₦6,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="c7" data-title="Bow Detail Plaid Ruffle Pet Dress" data-price="10000">
+    <div class="img-box"><img src="Bow Detail Plaid Ruffle Pet Dress.png" alt="Bow Detail Plaid Ruffle Pet Dress"></div>
+    <h3 class="wet-title">Bow Detail Plaid Ruffle Pet Dress</h3>
+    <div class="price-and-cart">
+      <p class="price">₦10,000</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+      <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- JS will inject cart items here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="subtotal-row">
+        <p class="subtotal-label">SUBTOTAL:</p>
+        <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+      </div>
+
+      <a href="#" class="coupon-link">Have a Coupon?</a>
+
+      <div class="cart-buttons">
+        <button class="view-cart-btn">VIEW CART</button>
+        <button class="checkout-btn">CHECKOUT →</button>
+      </div>
+    </div>
+  </aside>
+
+
+               <!-- Search Results -->
+  <section id="searchResults" class="results hidden">
+    <h3>Search Results</h3>
+    <ul id="resultList"></ul>
+  </section>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>

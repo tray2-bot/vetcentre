@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Center</title>
+
+  <!-- ICON LIBRARIES -->
+  <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+      <h1>VetCare Center</h1>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="top-right" id="desktopMenu">
+
+      <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+        <div class="dropdown-content">
+          <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+          <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+          <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+          <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+          <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+        </div>
+      </div>
+
+      <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+      <div class="dropdown">
+        <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+        <div class="dropdown-content">
+          <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+        </div>
+      </div>
+
+      <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+      <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <!-- CART IN MOBILE -->
+
+    <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+      <div class="mobile-dropdown-content">
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+        <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+        <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+        <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+      </div>
+    </div>
+
+    <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+      <div class="mobile-dropdown-content">
+        <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+    <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+  </div>
+
+  <!-- MAIN HEADER (SEARCH + ICONS) -->
+  <header class="main-header">
+    <div class="search-area">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+        <button id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+     <!-- CART - note the id used by JS -->
+      <div class="cart" id="cartIcon" title="Open cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+
+    <section class="banner-slider">
+      <div class="slide active" style="background-image: url('shop\ topper.jpg');">
+        <div class="banner-content">
+          <h2>We Care for Every Pet</h2>
+          <p>Quality veterinary care for all animals</p>
+          <a href="register.html" class="banner-btn">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Shop For Everyday essentials</h2>
+
+      <div class="grid">
+        <a href="dog-food.html" class="E-item"><img src="dog food.jpg">
+          <p>Dog food</p>
+        </a>
+        <a href="cat-food.html" class="E-item"><img src="cat food.jpg">
+          <p>Cat food</p>
+        </a>
+        <a href="treats.html" class="E-item"><img src="pet treats.jpg">
+          <p>Treats</p>
+        </a>
+        <a href="litter.html" class="E-item"><img src="litter.jpg">
+          <p>Litter supplies</p>
+        </a>
+        <a href="prescription.html" class="E-item"><img src="precribption.jpg">
+          <p>Prescription food</p>
+        </a>
+        <a href="premium.html" class="E-item"><img src="premium.jpg">
+          <p>Premium food</p>
+        </a>
+        <a href="fresh.html" class="E-item"><img src="fresh food.jpg">
+          <p>Fresh food</p>
+        </a>
+        <a href="supplements.html" class="E-item"><img src="supplement.jpg">
+          <p>Food supplements</p>
+        </a>
+        <a href="winter.html" class="E-item"><img src="winter.jpg">
+          <p>Winter wear</p>
+        </a>
+        <a href="toys.html" class="E-item"><img src="pet toys.jpg">
+          <p>Toys</p>
+        </a>
+        <a href="grooming.html" class="E-item"><img src="grooming.jpg">
+          <p>Grooming tools</p>
+        </a>
+        <a href="gps.html" class="E-item"><img src="gps tracker.jpg">
+          <p>GPS tracker</p>
+        </a>
+        <a href="beds.html" class="E-item"><img src="pet beds.jpg">
+          <p>Beds & mats</p>
+        </a>
+        <a href="walk.html" class="E-item"><img src="walk kit.jpg">
+          <p>Walk essentials</p>
+        </a>
+        <a href="bowls.html" class="E-item"><img src="pet bowls.jpg">
+          <p>Bowls & feeders</p>
+        </a>
+        <a href="travel.html" class="E-item"><img src="travelkit.jpg">
+          <p>Travel supplies</p>
+        </a>
+      </div>
+    </section>
+
+
+
+<main class="s-sale">
+    <section class="product-columns" aria-label="Products overview">
+      <!-- Column: Top Selling -->
+      <div class="col">
+        <h2 class="col-title">Top Selling Products</h2>
+        <ul class="product-list" aria-label="Top selling products">
+          <li class="product">
+            <img class="product-image" src="lhasa apso guide.jpg" alt="A New Owner's Guide to Lhasa Apsos cover">
+            <div class="product-meta">
+              <a href="#" class="product-title">A New Owner's Guide to Lhasa Apsos</a>
+              <div class="product-price">₦4,500.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="Short Guide to a Happy Dog.jpg" alt="Short Guide to a Happy Dog cover">
+            <div class="product-meta">
+              <a href="#" class="product-title">Short Guide to a Happy Dog</a>
+              <div class="product-price">₦3,500.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="Bully Max Muscle Building Powder.jpg" alt="Bully Max Muscle Building Powder">
+            <div class="product-meta">
+              <a href="#" class="product-title">Bully Max Muscle Building Powder</a>
+              <div class="product-price">₦13,300.00</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column: On-sale -->
+      <div class="col">
+        <h2 class="col-title">On-sale Products</h2>
+        <ul class="product-list" aria-label="On sale products">
+          <li class="product">
+            <img class="product-image" src="A New Owner's Guide to Doberman Pinschers.jpg" alt="Doberman guide">
+            <div class="product-meta">
+              <a href="#" class="product-title">A New Owner's Guide to Doberman Pinschers</a>
+              <div class="product-price">₦2,000.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="A New Owner's Guide to Lhasa Apsos.jpg" alt="Lhasa Apsos">
+            <div class="product-meta">
+              <a href="#" class="product-title">A New Owner's Guide to Lhasa Apsos</a>
+              <div class="product-price">₦4,500.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="Royal Canin Giant Puppy - 3.5kg.jpg" alt="Royal Canin puppy 3.5kg">
+            <div class="product-meta">
+              <a href="#" class="product-title">Royal Canin Giant Puppy - 3.5kg</a>
+              <div class="product-price">₦5,000</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column: Featured -->
+      <div class="col">
+        <h2 class="col-title">Featured Products</h2>
+        <ul class="product-list" aria-label="Featured products">
+          <li class="product">
+            <img class="product-image" src="Cocoyo House Training Pads - 30 Pack.jpg" alt="Rosewood House Training Pads">
+            <div class="product-meta">
+              <a href="#" class="product-title">Cocoyo House Training Pads - 30 Pack</a>
+              <div class="product-price">₦7,500.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="Rosewood Rope Twist Lead.jpg" alt="Rosewood Rope Twist Lead">
+            <div class="product-meta">
+              <a href="#" class="product-title">Rosewood Rope Twist Lead</a>
+              <div class="product-price">₦6,500.00</div>
+            </div>
+          </li>
+
+          <li class="product">
+            <img class="product-image" src="Jojo Kool-Kat with Chicken.jpg" alt="Jojo Kool-Kat">
+            <div class="product-meta">
+              <a href="#" class="product-title">Jojo Kool-Kat with Chicken</a>
+              <div class="product-price">₦2,800.00</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+    <div class="section-title">
+      <h2>Popular Brands</h2>
+    </div>
+
+    <div class="scroll-container">
+      <div class="brand-row" id="brandRow">
+        <img src="brand 1.webp" alt="Brand 1">
+        <img src="brand 2.png" alt="Brand 2">
+        <img src="brand 3.jpg" alt="Brand 3">
+        <img src="brand 4.jpg" alt="Brand 4">
+        <img src="brand 5.jpg" alt="Brand 5">
+        <img src="brand 6.jpg" alt="Brand 6">
+        <img src="brand 7.jpg" alt="Brand 7">
+        <img src="brand 8.avif" alt="Brand 8">
+        <img src="brand 9.jpg" alt="Brand 9">
+        <img src="brand 10.jpg" alt="Brand 10">
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2>Trending Products</h2>
+    </div>
+
+    <div class="scroll-container">
+      <div class="brand-row" id="brandRow">
+        <img src="product 1.jpg" alt="Brand 1">
+        <img src="product 2.jpg" alt="Brand 2">
+        <img src="product 3.jpg" alt="Brand 3">
+        <img src="product 4.jpg" alt="Brand 4">
+        <img src="product 5.jpg" alt="Brand 5">
+        <img src="product 6.jpg" alt="Brand 6">
+        <img src="product 7.jpg" alt="Brand 7">
+        <img src="product 8.jpg" alt="Brand 8">
+        <img src="product 9.jpg" alt="Brand 9">
+        <img src="product 10.jpg" alt="Brand 10">
+      </div>
+    </div>
+
+               <!-- Search Results -->
+  <section id="searchResults" class="results hidden">
+    <h3>Search Results</h3>
+    <ul id="resultList"></ul>
+  </section>
+
+
+    <section class="shop-section">
+      <h2>Convenient Ways to Shop</h2>
+
+      <div class="shop-container">
+
+        <div class="shop-item">
+          <i class="ri-calendar-line"></i>
+          <h3>ON SCHEDULE</h3>
+          <p class="title">Autoshop</p>
+          <p class="desc">35% OFF first order & 5% OFF future orders</p>
+        </div>
+
+        <div class="shop-item">
+          <i class="ri-door-open-line"></i>
+          <h3>FAST & FREE</h3>
+          <p class="title">Same-Day Delivery</p>
+          <p class="desc">Get your order right when you need it</p>
+        </div>
+
+        <div class="shop-item">
+          <i class="ri-car-line"></i>
+          <h3>2 HRS OR LESS</h3>
+          <p class="title">Store Pickup</p>
+          <p class="desc">FREE pickup ready in 2 hours or less</p>
+        </div>
+
+        <div class="shop-item">
+          <i class="ri-truck-line"></i>
+          <h3>1–3 DAYS</h3>
+          <p class="title">Ship to Home</p>
+          <p class="desc">FREE Shipping on select orders $49+</p>
+        </div>
+
+      </div>
+
+    <footer>
+      <div class="footer-links">
+        <div class="col">
+          <a href="#">Pet Services</a>
+          <a href="#">Help Center</a>
+          <a href="#">Treats Rewards program</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Track your order</a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">PetSmart Charities</a>
+        </div>
+
+        <div class="col">
+          <a href="#">US Site</a>
+          <a href="#">Canada Site</a>
+          <a href="#">Africa Site</a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <i class="ri-instagram-line"></i>
+        <i class="ri-facebook-circle-line"></i>
+        <i class="ri-twitter-x-line"></i>
+        <i class="ri-tiktok-line"></i>
+        <i class="ri-youtube-line"></i>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 PetSmart LLC</p>
+        <div class="bottom-links">
+          <a href="#">Recalls</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Interest-Based Ads</a>
+          <a href="#">CA Supply Chain Act</a>
+          <a href="#">CA Privacy Rights</a>
+          <a href="#">Your Privacy Choices</a>
+        </div>
+      </div>
+    </footer>
+    </section>
+
+      <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+      <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- JS will inject cart items here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="subtotal-row">
+        <p class="subtotal-label">SUBTOTAL:</p>
+        <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+      </div>
+
+      <a href="#" class="coupon-link">Have a Coupon?</a>
+
+      <div class="cart-buttons">
+        <button class="view-cart-btn">VIEW CART</button>
+        <button class="checkout-btn">CHECKOUT →</button>
+      </div>
+    </div>
+  </aside>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

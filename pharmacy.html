@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Center</title>
+
+  <!-- ICON LIBRARIES -->
+  <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+      <h1>VetCare Center</h1>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="top-right" id="desktopMenu">
+
+      <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+        <div class="dropdown-content">
+          <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+          <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+          <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+          <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+          <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+        </div>
+      </div>
+
+      <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+      <div class="dropdown">
+        <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+        <div class="dropdown-content">
+          <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+        </div>
+      </div>
+
+      <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+      <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <!-- CART IN MOBILE -->
+
+    <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+      <div class="mobile-dropdown-content">
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+        <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+        <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+        <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+      </div>
+    </div>
+
+    <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+      <div class="mobile-dropdown-content">
+        <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+    <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+  </div>
+
+  <!-- MAIN HEADER (SEARCH + ICONS) -->
+  <header class="main-header">
+    <div class="search-area">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+        <button id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+     <!-- CART - note the id used by JS -->
+      <div class="cart" id="cartIcon" title="Open cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+    <section class="shop-slide">
+        <section class="banner-slider">
+            <div class="slide active" style="background-image: url('macy.jpg');">
+                <div class="banner-content">
+                    <h2>Instant & complete vet<br>care, wherever you are</h2>
+                    <p>At only <span>₦20,000</span>, get end-to-end<br>support from our vets.</p>
+                    <a href="consult.html" class="banner-btn">Consult Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pet-categories">
+            <div class="p-container">
+
+                <div class="cat-card">
+                    <img src="tick.jpg" alt="">
+                    <p>Tick & Flea</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="diet.jpg" alt="">
+                    <p>Prescribed Diet</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="pet med.jpg" alt="">
+                    <p>Dog Medicine</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="cat med.jpg" alt="">
+                    <p>Cat Medicine</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="house.jpg" alt="">
+                    <p>Clinics</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="well.jpg" alt="">
+                    <p>Wellness</p>
+                </div>
+
+                <div class="cat-card">
+                    <img src="dewormer.jpg" alt="">
+                    <p>Dewormer</p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- ================= PRESCRIPTION DIETS ================= -->
+<section class="category">
+    <h2>Never Miss a Dose</h2>
+</section>
+
+<div class="product-grid">
+    <div class="wet-product" data-id="d1" data-title="Simparica Trio Chewable" data-price="4200">
+        <img src="Simparica Trio Chewable.jpg" alt="Simparica Trio Chewable">
+        <h3>Simparica Trio</h3>
+        <p class="price">₦4,200</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d2" data-title="Revolution Plus for Cats" data-price="9000">
+        <img src="Revolution Plus for Cats.jpg" alt="Revolution Plus for Cats">
+        <h3>Revolution Plus for Cats</h3>
+        <p class="price">₦9,000</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d3" data-title="NexGard Chewable Tablet" data-price="3400">
+        <img src="nexgard.jpg" alt="NexGard Chewable Tablet">
+        <h3>NexGard Chewable</h3>
+        <p class="price">₦3,400</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d4" data-title="Fluticasone Propionate" data-price="27900">
+        <img src="Fluticasone-Propionate-HFA-INH-44mcg-600x600-2.webp" alt="Fluticasone Propionate">
+        <h3>Fluticasone Propionate</h3>
+        <p class="price">₦27,900</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d5" data-title="Apoquel Tablet" data-price="3100">
+        <img src="Apoquel Tablet.png" alt="Apoquel Tablet">
+        <h3>Apoquel Tablet</h3>
+        <p class="price">₦3,100</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d6" data-title="NexGard COMBO Trpical" data-price="17300">
+        <img src="NexGard COMBO Trpical Solution.jpg" alt="NexGard COMBO Trpical">
+        <h3>NexGard COMBO</h3>
+        <p class="price">₦17,300</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d7" data-title="Heartgard Plus Chewable" data-price="14500">
+        <img src="Heartgard Plus Chewable For Dogs.jpg" alt="Heartgard Plus Chewable">
+        <h3>Heartgard Plus</h3>
+        <p class="price">₦14,500</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d8" data-title="Credelio Chewable" data-price="11700">
+        <img src="Credelio Chewable Tablets.jpg" alt="Credelio Chewable">
+        <h3>Credelio Chewable</h3>
+        <p class="price">₦11,700</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d9" data-title="Credelio Quattro" data-price="21300">
+        <img src="Credelio Quattro Chewable Tablet.jpg" alt="Credelio Quattro">
+        <h3>Credelio Quattro</h3>
+        <p class="price">₦21,300</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d10" data-title="Advantage Multi For Cats" data-price="11900">
+        <img src="Advantage Multi For Cats.jpg" alt="Advantage Multi For Cats">
+        <h3>Advantage Multi</h3>
+        <p class="price">₦11,900</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="wet-product" data-id="d11" data-title="Proin ER Extended Release Tablets" data-price="11900">
+        <img src="proin er.jpg" alt="Proin ER Extended Release Tablets">
+        <h3>Proin ER Extended</h3>
+        <p class="price">₦11,900</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+</div>
+
+        <section class="payless-corner">
+            <h1>Pay less, care more</h1>
+        </section>
+
+<!-- ================= VETERINARY PRODUCTS ================= -->
+<section class="category">
+    <h2 class="section-title">Veterinary Products</h2>
+</section>
+
+<div class="product-grid" id="vetProductsGrid">
+    <div class="wet-product" data-id="v1" data-title="Vetina Stride Plus Syrup (200ml)" data-price="2377">
+        <div class="img-box"><img src="Vetina Stride Plus Syrup (200ml).jpg" alt="Vetina Stride Plus Syrup"></div>
+        <h3 class="wet-title">Vetina Stride Plus Syrup</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,377</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v2" data-title="Farmina Vet Life Joint Dog Food" data-price="2420">
+        <div class="img-box"><img src="Farmina Vet Life Joint Dog Food.jpg" alt="Farmina Vet Life Joint Dog Food"></div>
+        <h3 class="wet-title">Farmina Vet Life Joint</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,420</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v3" data-title="Royal Canin Mobility Dog Food" data-price="2600">
+        <div class="img-box"><img src="Royal Canin Mobility Dog Food.png" alt="Royal Canin Mobility Dog Food"></div>
+        <h3 class="wet-title">Royal Canin Mobility</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,600</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v4" data-title="Gerisure Powder for Dogs & Cats" data-price="557">
+        <div class="img-box"><img src="Gerisure Powder for Dogs & Cats.webp" alt="Gerisure Powder for Dogs & Cats"></div>
+        <h3 class="wet-title">Gerisure Powder</h3>
+        <div class="price-and-cart">
+            <p class="price">₦557</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v5" data-title="Me & My Mobility Supplements" data-price="160">
+        <div class="img-box"><img src="Me & My Mobility Supplements.jpg" alt="Me & My Mobility Supplements"></div>
+        <h3 class="wet-title">Me & My Mobility</h3>
+        <div class="price-and-cart">
+            <p class="price">₦160</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v6" data-title="Tomlyn Immune Support Daily L-Lysine" data-price="2377">
+        <div class="img-box"><img src="Tomlyn Immune Support Daily L-Lysine.jpg" alt="Tomlyn Immune Support Daily L-Lysine"></div>
+        <h3 class="wet-title">Tomlyn Immune</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,377</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v7" data-title="T-Relief™ Pet Allergy Oral Drops" data-price="2420">
+        <div class="img-box"><img src="T-Relief™ Pet Allergy Oral Drops.jpg" alt="T-Relief Pet Allergy Oral Drops"></div>
+        <h3 class="wet-title">T-Relief™ Pet Allergy</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,420</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v8" data-title="NATURA PETZ ORGANICS Break It Up" data-price="2600">
+        <div class="img-box"><img src="NATURA PETZ ORGANICS Break It Up.jpg" alt="NATURA PETZ ORGANICS Break It Up"></div>
+        <h3 class="wet-title">NATURA PETZ</h3>
+        <div class="price-and-cart">
+            <p class="price">₦2,600</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v9" data-title="Beaphar Wormclear" data-price="557">
+        <div class="img-box"><img src="Beaphar Wormclear.jpg" alt="Beaphar Wormclear"></div>
+        <h3 class="wet-title">Beaphar Wormclear</h3>
+        <div class="price-and-cart">
+            <p class="price">₦557</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="v10" data-title="Proviable® Kits For Cats" data-price="160">
+        <div class="img-box"><img src="Proviable® Kits For Cats.jpg" alt="Proviable® Kits For Cats"></div>
+        <h3 class="wet-title">Proviable® Kits</h3>
+        <div class="price-and-cart">
+            <p class="price">₦160</p>
+            <button class="add-cart">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= SUPPLEMENTS & HEALTH PRODUCTS ================= -->
+<section class="category">
+  <h2 class="section-title">Supplements & Health Products</h2>
+</section>
+
+<div class="product-grid" id="supplementsGrid">
+  <div class="wet-product" data-id="s1" data-title="Liv.52 PROTEC Liquid" data-price="2377">
+    <div class="img-box"><img src="Liv.52 PROTEC Liquid.jpg" alt="Liv.52 PROTEC Liquid"></div>
+    <h3 class="wet-title">Liv.52 PROTEC Liquid</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,377</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s2" data-title="LIVO BOOST-SG: Ultimate" data-price="2420">
+    <div class="img-box"><img src="Ultimate.jpg" alt="LIVO BOOST-SG: Ultimate"></div>
+    <h3 class="wet-title">LIVO BOOST-SG</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,420</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s3" data-title="Euro D-G-C eurovet" data-price="2600">
+    <div class="img-box"><img src="eruo.jpg" alt="Euro D-G-C eurovet"></div>
+    <h3 class="wet-title">Euro D-G-C eurovet</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,600</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s4" data-title="Tefroli Syrup" data-price="557">
+    <div class="img-box"><img src="Tefroli Syrup.jpg" alt="Tefroli Syrup"></div>
+    <h3 class="wet-title">Tefroli Syrup</h3>
+    <div class="price-and-cart">
+      <p class="price">₦557</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s5" data-title="Perumadi Liquid" data-price="160">
+    <div class="img-box"><img src="Perumadi Liquid.jpg" alt="Perumadi Liquid"></div>
+    <h3 class="wet-title">Perumadi Liquid</h3>
+    <div class="price-and-cart">
+      <p class="price">₦160</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s6" data-title="NATURAL ANIMAL SOLUTIONS" data-price="2377">
+    <div class="img-box"><img src="NATURAL ANIMAL SOLUTIONS.jpg" alt="NATURAL ANIMAL SOLUTIONS"></div>
+    <h3 class="wet-title">NATURAL ANIMAL</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,377</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s7" data-title="Nordic Naturals Cod Liver Oil" data-price="2420">
+    <div class="img-box"><img src="Nordic Naturals Cod Liver Oil.jpg" alt="Nordic Naturals Cod Liver Oil"></div>
+    <h3 class="wet-title">Nordic Naturals</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,420</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s8" data-title="New Life Spectrum Naturox" data-price="2600">
+    <div class="img-box"><img src="New Life Spectrum Naturox.jpg" alt="New Life Spectrum Naturox"></div>
+    <h3 class="wet-title">New Life Spectrum</h3>
+    <div class="price-and-cart">
+      <p class="price">₦2,600</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s9" data-title="DrTim's Aquatics First Defense Stress Relief" data-price="557">
+    <div class="img-box"><img src="DrTim's Aquatics First Defense Stress Relief.jpg" alt="DrTim's Aquatics First Defense Stress Relief"></div>
+    <h3 class="wet-title">DrTim's Aquatics</h3>
+    <div class="price-and-cart">
+      <p class="price">₦557</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="wet-product" data-id="s10" data-title="Salt Water Aquarium" data-price="160">
+    <div class="img-box"><img src="salt water aquarium.jpg" alt="Salt Water Aquarium"></div>
+    <h3 class="wet-title">Salt Water Aquarium</h3>
+    <div class="price-and-cart">
+      <p class="price">₦160</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+    </div>
+</div>
+
+<!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+      <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- JS will inject cart items here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="subtotal-row">
+        <p class="subtotal-label">SUBTOTAL:</p>
+        <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+      </div>
+
+      <a href="#" class="coupon-link">Have a Coupon?</a>
+
+      <div class="cart-buttons">
+        <button class="view-cart-btn">VIEW CART</button>
+        <button class="checkout-btn">CHECKOUT →</button>
+      </div>
+    </div>
+  </aside>
+
+
+
+        <section class="super">
+            <h1>Super care with superkits</h1>
+        </section>
+
+
+        <!-- PRODUCT SCROLLER -->
+        <section class="superkit-section">
+            <div class="superkit-scroll">
+
+                <a href="anti-fungal.html" class="kit">
+                    <img src="antifungal.jpg" alt="">
+                    <p>Anti Fungal</p>
+                </a>
+
+
+                <a href="anti-itching.html" class="kit">
+                    <img src="Anti Itching.jpg" alt="">
+                    <p>Anti Itching</p>
+                </a>
+
+                <a href="anti-hairfall.html" class="kit">
+                    <img src="Anti Hairfall.jpg" alt="">
+                    <p>Anti Hairfall</p>
+                </a>
+
+                <a href="tick-puppy.html" class="kit">
+                    <img src="Tick & Flea — Puppy.jpg" alt="">
+                    <p>Tick & Flea — Puppy</p>
+                </a>
+
+                <a href="tick-kitten.html" class="kit">
+                    <img src="Tick & Flea — Kitten.jpg" alt="">
+                    <p>Tick & Flea — Kitten</p>
+                </a>
+
+                <a href="tick-smalldog.html" class="kit">
+                    <img src="Tick & Flea — Small Dog.jpg" alt="">
+                    <p>Tick & Flea — Small Dog</p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- SUPPLEMENT CORNER -->
+        <section class="supplement-corner">
+            <h2>Supplement corner</h2>
+        
+
+            <section class="superkit-section">
+                <div class="superkit-scroll">
+
+                    <a href="anti-fungal.html" class="kit">
+                        <img src="Bark & Whiskers Immune.jpg" alt="">
+                        <p>Bark & Whiskers</p>
+                    </a>
+
+                    <a href="anti-itching.html" class="kit">
+                        <img src="Zesty Paws Aller-Immune.jpg" alt="">
+                        <p>Zesty Paws Aller</p>
+                    </a>
+
+                    <a href="anti-hairfall.html" class="kit">
+                        <img src="Liquid Multivitamin.jpg" alt="">
+                        <p>Liquid Multivitamin</p>
+                    </a>
+
+                    <a href="tick-puppy.html" class="kit">
+                        <img src="Chaga for Pets.jpg" alt="">
+                        <p>Chaga for Pets</p>
+                    </a>
+
+                    <a href="tick-kitten.html" class="kit">
+                        <img src="Pet Protect Whole Body Comfor.jpg" alt="">
+                        <p>Pet Protect Whole Body</p>
+                    </a>
+
+                    <a href="tick-smalldog.html" class="kit">
+                        <img src="Fera Pets Probiotics.jpg" alt="">
+                        <p>Fera Pets Probiotics</p>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+
+        <!-------------Health & Hygiene-------->
+        <section class="health-corner">
+            <h2>Health & Hygiene</h2>
+
+            <section class="superkit-section">
+                <div class="superkit-scroll">
+
+                    <a href="anti-fungal.html" class="kit">
+                        <img src="coat.jpg" alt="">
+                        <p>Vitamins</p>
+                    </a>
+
+                    <a href="anti-itching.html" class="kit">
+                        <img src="disinfectant.jpg" alt="">
+                        <p>Hygiene</p>
+                    </a>
+
+                    <a href="anti-hairfall.html" class="kit">
+                        <img src="anxiety.jpg" alt="">
+                        <p>Anti-anxiety</p>
+                    </a>
+
+                    <a href="tick-puppy.html" class="kit">
+                        <img src="diapers.jpg" alt="">
+                        <p>Diapers & pads</p>
+                    </a>
+
+                    <a href="tick-kitten.html" class="kit">
+                        <img src="tick and flea.jpg" alt="">
+                        <p>Tick & Flea</p>
+                    </a>
+
+                    <a href="tick-smalldog.html" class="kit">
+                        <img src="anti pain.jpg" alt="">
+                        <p>Anti-pain</p>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="category-section">
+            <h2>Preventive care</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="skincare.jpg" alt="Skin care">
+                    <p>Skin care</p>
+                </div>
+                <div class="category-card">
+                    <img src="dewormer 2.jpg" alt="Dewormer">
+                    <p>Dewormer</p>
+                </div>
+                <div class="category-card">
+                    <img src="probiotics.jpg" alt="Probiotic">
+                    <p>Probiotic</p>
+                </div>
+                <div class="category-card">
+                    <img src="skin supplement.jpg" alt="Supplements">
+                    <p>Supplements</p>
+                </div>
+                <div class="category-card">
+                    <img src="ear cleaner.jpg" alt="Ear cleanser">
+                    <p>Ear cleanser</p>
+                </div>
+                <div class="category-card">
+                    <img src="core immune.jpg" alt="Immunity boosters">
+                    <p>Immunity boosters</p>
+                </div>
+                <div class="category-card">
+                    <img src="anti anxiety.jpg" alt="Anti-anxiety">
+                    <p>Anti-anxiety</p>
+                </div>
+                <div class="category-card">
+                    <img src="antibiotics.jpg" alt="Antibiotics">
+                    <p>Antibiotics</p>
+                </div>
+            </div>
+        </section>
+
+
+         
+
+           <!-- Search Results -->
+  <section id="searchResults" class="results hidden">
+    <h3>Search Results</h3>
+    <ul id="resultList"></ul>
+  </section>
+
+
+            <footer>
+        <section class="shop-section">
+            <h2>Convenient Ways to Shop</h2>
+
+            <div class="shop-container">
+
+                <div class="shop-item">
+                    <i class="ri-calendar-line"></i>
+                    <h3>ON SCHEDULE</h3>
+                    <p class="title">Autoshop</p>
+                    <p class="desc">35% OFF first order & 5% OFF future orders</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-door-open-line"></i>
+                    <h3>FAST & FREE</h3>
+                    <p class="title">Same-Day Delivery</p>
+                    <p class="desc">Get your order right when you need it</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-car-line"></i>
+                    <h3>2 HRS OR LESS</h3>
+                    <p class="title">Store Pickup</p>
+                    <p class="desc">FREE pickup ready in 2 hours or less</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-truck-line"></i>
+                    <h3>1–3 DAYS</h3>
+                    <p class="title">Ship to Home</p>
+                    <p class="desc">FREE Shipping on select orders $49+</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="footer-links">
+            <div class="col">
+                <a href="#">Pet Services</a>
+                <a href="#">Help Center</a>
+                <a href="#">Treats Rewards program</a>
+            </div>
+
+            <div class="col">
+                <a href="#">Track your order</a>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">PetSmart Charities</a>
+            </div>
+
+            <div class="col">
+                <a href="#">US Site</a>
+                <a href="#">Canada Site</a>
+                <a href="#">Africa Site</a>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-line"></i>
+            <i class="ri-twitter-x-line"></i>
+            <i class="ri-tiktok-line"></i>
+            <i class="ri-youtube-line"></i>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2025 PetSmart LLC</p>
+            <div class="bottom-links">
+                <a href="#">Recalls</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Interest-Based Ads</a>
+                <a href="#">CA Supply Chain Act</a>
+                <a href="#">CA Privacy Rights</a>
+                <a href="#">Your Privacy Choices</a>
+            </div>
+        </div>
+    </footer>
+
+
+     <script src="index.js"></script>
+</body>
+
+</html>

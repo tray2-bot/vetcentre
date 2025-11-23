@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare Center</title>
+
+    <!-- ICON LIBRARIES -->
+    <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-left">
+            <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+            <h1>VetCare Center</h1>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- DESKTOP MENU -->
+        <div class="top-right" id="desktopMenu">
+
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+            <div class="dropdown">
+                <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+                <div class="dropdown-content">
+                    <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+                    <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+                    <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+                    <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+                    <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+                </div>
+            </div>
+
+            <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+            <div class="dropdown">
+                <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+                <div class="dropdown-content">
+                    <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+                </div>
+            </div>
+
+            <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+            <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+        </div>
+    </div>
+
+    <!-- MOBILE SLIDE-IN MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <!-- CART IN MOBILE -->
+
+        <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+        <div class="mobile-dropdown">
+            <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+            <div class="mobile-dropdown-content">
+                <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+                <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+                <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+                <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+                <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+            </div>
+        </div>
+
+        <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+        <div class="mobile-dropdown">
+            <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+            <div class="mobile-dropdown-content">
+                <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+            </div>
+        </div>
+
+        <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+        <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+
+    <!-- MAIN HEADER (SEARCH + ICONS) -->
+    <header class="main-header">
+        <div class="search-area">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+                <button id="searchBtn"><i class="ri-search-line"></i></button>
+            </div>
+            <!-- CART - note the id used by JS -->
+            <div class="cart" id="cartIcon" title="Open cart">
+                <i class="ri-shopping-cart-line"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER SECTION -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>24/7 vetcare centre</h3>
+            <span>Stop stressing about your pet's health</span>
+            <p>Talk to a vet in minutes and receive a care and treatment plan with</p>
+            <p>the top-ranked pet centre</p>
+            <a href="consultation.html" class="home-btn">Talk to a vet</a>
+        </div>
+    </section>
+
+
+    <main class="hero">
+        <div class="wrap">
+            <!-- LEFT: Phone mockup (HTML chat UI) -->
+            <section class="left">
+                <div class="phone">
+                    <header class="phone-header">
+                        <div class="avatar" aria-hidden="true"></div>
+                        <div class="meta">
+                            <div class="name">DrTara</div>
+                            <div class="status">Online</div>
+                        </div>
+                        <button class="end">End Chat</button>
+                    </header>
+
+                    <!-- add class .animate to trigger animations -->
+                    <div class="chat animate" aria-live="polite">
+
+                        <div class="time" style="--d:0s">Today • 9:40 PM</div>
+
+                        <div class="bubble incoming" style="--d:0.18s">
+                            <div class="bubble-text"><strong>Hi, my name is Tara.</strong></div>
+                        </div>
+
+                        <div class="bubble incoming" style="--d:0.48s">
+                            <div class="bubble-text">I am sorry to see that Clancy is experiencing some limping. How
+                                long has this been going on for?</div>
+                        </div>
+
+                        <div class="bubble outgoing" style="--d:0.88s">
+                            <div class="bubble-text">Since this morning. Here's an image of Clancy. He was walking funny
+                                earlier today.</div>
+                            <figure class="thumb" style="--d:1.12s">
+                                <img src="Clancy image.jpg" alt="Clancy image (replace with your photo)" />
+                            </figure>
+                        </div>
+
+                        <div class="bubble incoming" style="--d:1.86s">
+                            <div class="bubble-text">Okay! Let's talk through what to check for so that we can get
+                                Clancy the help he needs.</div>
+                        </div>
+
+                        <!-- typing indicator shows before final incoming bubble -->
+                        <div class="typing" aria-hidden="true" style="--d:1.38s">
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="end-space" style="--d:2.2s"></div>
+                    </div>
+
+                    <footer class="phone-footer">
+                        <input type="text" placeholder="Write a message..." aria-label="Write a message" />
+                        <button aria-label="Send">➤</button>
+                    </footer>
+                </div>
+            </section>
+
+            <!-- RIGHT: Copy + CTA -->
+            <aside class="right">
+                <h1><span class="strong">Free online vet chat</span> for quick<br class="hide-sm" /> advice</h1>
+
+                <ul class="features">
+                    <li><strong>Chat with licensed virtual vet techs</strong> Get expert guidance from our caring online
+                        vet team.</li>
+                    <li><strong>Share photos and videos over chat</strong> Just sign up for a free VetCare account.</li>
+                    <li><strong>Clear answers and next steps</strong> You’ll get helpful articles and product
+                        recommendations.</li>
+                </ul>
+
+                <p class="disclaimer">
+                    Available for general questions in any state except Africa, USA, and UK
+                    <em>(no diagnoses, prescriptions, or vet diet authorizations).</em>
+                </p>
+
+                <a class="cta" href="consultation.html">Chat now</a>
+            </aside>
+        </div>
+    </main>
+
+
+
+
+    <!-- VET LIST SECTION -->
+    <section class="vets">
+        <h2>Access our Expert Vets</h2>
+
+        <div class="vet-list">
+
+            <div class="vet-card">
+                <img src="vet1.jpg" alt="">
+                <h3>Dr. Ashitha Suresh</h3>
+                <p>Gynaecology & Obstetrics</p>
+                <span>8+ Years Experience</span>
+            </div>
+
+            <div class="vet-card">
+                <img src="vet2.jpg" alt="">
+                <h3>Dr. Rashmi S</h3>
+                <p>oncologist</p>
+                <span>6+ Years Experience</span>
+            </div>
+
+            <div class="vet-card">
+                <img src="vet3.jpg" alt="">
+                <h3>Dr. Anu GS</h3>
+                <p>General Medicine</p>
+                <span>3+ Years Experience</span>
+            </div>
+
+            <div class="vet-card">
+                <img src="vet4.jpg" alt="">
+                <h3>Dr. pearl BM</h3>
+                <p>Dermatologist</p>
+                <span>2+ Years Experience</span>
+            </div>
+
+            <div class="vet-card">
+                <img src="vet5.jpg" alt="">
+                <h3>Dr. sumo A</h3>
+                <p>Ophthalmologist</p>
+                <span>3+ Years Experience</span>
+            </div>
+
+            <div class="vet-card">
+                <img src="vet6.jpg" alt="">
+                <h3>Dr. Liam Snow</h3>
+                <p>Cardiologist</p>
+                <span>4+ Years Experience</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clinic-care">
+        <div class="care-header">
+            <h2>Care At Clinic</h2>
+            <p>Expert-led, compassionate & fear-free clinic care.</p>
+        </div>
+
+        <div class="care-scroll">
+            <div class="care-card">
+                <img src="in person consult.jpg" alt="Consultation">
+                <p>Consultation</p>
+            </div>
+            <div class="care-card">
+                <img src="vaccination p.jpg" alt="Vaccination">
+                <p>Vaccination</p>
+            </div>
+            <div class="care-card">
+                <img src="emergengy.jpg" alt="Grooming">
+                <p>Emergency</p>
+            </div>
+            <div class="care-card">
+                <img src="deworm.jpg" alt="Deworming">
+                <p>Deworming</p>
+            </div>
+            <div class="care-card">
+                <img src="surgery.png" alt="Surgery">
+                <p>Surgery</p>
+            </div>
+            <div class="care-card">
+                <img src="dental care.jpg" alt="Surgery">
+                <p>Dental Care</p>
+            </div>
+            <div class="care-card">
+                <img src="planner.jpg" alt="Surgery">
+                <p>Nutrition</p>
+            </div>
+            <div class="care-card">
+                <img src="daycare.jpg" alt="Surgery">
+                <p>Daycare</p>
+            </div>
+            <div class="care-card">
+                <img src="grooming.png" alt="Surgery">
+                <p>Grooming</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="clinic-care">
+        <div class="care-header">
+            <h2>Online pet solutions</h2>
+            <p>Fast, Realiable, and Always Available for Your Pet.</p>
+        </div>
+
+        <div class="care-scroll">
+            <div class="care-card">
+                <img src="online consult.png" alt="Consultation">
+                <p>Consultation</p>
+            </div>
+            <div class="care-card">
+                <img src="assessment.jpg" alt="Vaccination">
+                <p>Assessment</p>
+            </div>
+            <div class="care-card">
+                <img src="pre.jpg" alt="Grooming">
+                <p>Prescription</p>
+            </div>
+            <div class="care-card">
+                <img src="chat support.jpg" alt="Deworming">
+                <p>Chat Support</p>
+            </div>
+            <div class="care-card">
+                <img src="supplies.jpg" alt="Surgery">
+                <p>Pet Supplies</p>
+            </div>
+            <div class="care-card">
+                <img src="follow up.jpg" alt="Surgery">
+                <p>Follow-Up</p>
+            </div>
+            <div class="care-card">
+                <img src="nurtrition.jpg" alt="Surgery">
+                <p>Planner</p>
+            </div>
+            <div class="care-card">
+                <img src="online appointment.jpg" alt="Surgery">
+                <p>Appointment</p>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="affect">Are these the issue affecting your pet?</h2>
+
+    <section class="pet-issues-section">
+
+        <!-- LEFT SECTION -->
+        <div class="issues-left">
+            <div class="issues-image-box">
+                <img src="main-pet.jpg" alt="Pets" class="main-pet-img">
+
+                <!-- Issue tags (exact positions like screenshot) -->
+                <div class="issue-tag shedding">
+                    <i class="fa-solid fa-bore-hole"></i>
+                    <span>Shedding</span>
+                </div>
+
+                <div class="issue-tag cough">
+                    <i class="fa-solid fa-head-side-cough-slash"></i>
+                    <span>Kennel cough</span>
+                </div>
+
+                <div class="issue-tag fleas">
+                    <i class="fa-solid fa-bacteria"></i>
+                    <span>Fleas</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="issues-right">
+            <h3>Explore solutions by our experts</h3>
+
+            <div class="expert-card">
+                <img src="shed.jpg" alt="">
+                <div>
+                    <p>Everything you need to know about vaccinating your pet?</p>
+                    <a href="https://www.youtube.com/watch?v=OqfWvYjwxSs" target="_blank">Read more...</a>
+                </div>
+            </div>
+
+            <div class="expert-card">
+                <img src="eating.jpg" alt="">
+                <div>
+                    <p>How to identify and remove ticks from your dog?</p>
+                    <a href="https://www.youtube.com/watch?v=8tN0T6fSSvY" target="_blank">Read more...</a>
+                </div>
+            </div>
+
+            <div class="expert-card">
+                <img src="fruits.jpg" alt="">
+                <div>
+                    <p>3 best ways to improve the dental health of your pet?</p>
+                    <a href="https://www.youtube.com/watch?v=jFZ5EKeosnE" target="_blank">Read more...</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="why-consult">
+        <h2>Why consult with VetCare?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="icon-circle">
+                    <img src="anywhere.jpg" alt="">
+                </div>
+                <p>Book easily from<br>anywhere</p>
+            </div>
+
+            <div class="step">
+                <div class="icon-circle">
+                    <img src="whatsapp.jpg" alt="">
+                </div>
+                <p>Booking details will be<br>shared on WhatsApp</p>
+            </div>
+
+            <div class="step">
+                <div class="icon-circle">
+                    <img src="call.jpg" alt="">
+                </div>
+                <p>Get connected with<br>your Pet Relationship<br>Manager</p>
+            </div>
+
+            <div class="step">
+                <div class="icon-circle">
+                    <img src="PRM.jpg" alt="">
+                </div>
+                <p>Your PRM will guide you<br>through the process</p>
+            </div>
+
+            <div class="step">
+                <div class="icon-circle">
+                    <img src="happy dog.jpg" alt="">
+                </div>
+                <p>A healthy pet and a<br>happy pet parent</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pet-advice">
+        <h2>Get trusted advice on your pet’s health</h2>
+
+        <div class="advice-grid">
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="general.png" alt=""></div>
+                <p>General<br>Checkup</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="new pet.png" alt=""></div>
+                <p>New Pet<br>parent</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="skin issues.png" alt=""></div>
+                <p>Skin<br>issues</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="diegestive.png" alt=""></div>
+                <p>Digestive<br>issues</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="paw.png" alt=""></div>
+                <p>Paws &<br>Limbs</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="dental.png" alt=""></div>
+                <p>Dental<br>issues</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="ear.jpg" alt=""></div>
+                <p>Ears<br>issues</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="eyes.png" alt=""></div>
+                <p>Eyes<br>issues</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="reproduction.png" alt=""></div>
+                <p>Reproduction</p>
+            </div>
+
+            <div class="advice-item">
+                <div class="advice-icon"><img src="nutri.png" alt=""></div>
+                <p>Nutrition</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+            <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <!-- JS will inject cart items here -->
+        </div>
+
+        <div class="cart-footer">
+            <div class="subtotal-row">
+                <p class="subtotal-label">SUBTOTAL:</p>
+                <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+            </div>
+
+            <a href="#" class="coupon-link">Have a Coupon?</a>
+
+            <div class="cart-buttons">
+                <button class="view-cart-btn">VIEW CART</button>
+                <button class="checkout-btn">CHECKOUT →</button>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <!-- Search Results -->
+    <section id="searchResults" class="results hidden">
+        <h3>Search Results</h3>
+        <ul id="resultList"></ul>
+    </section>
+
+    <footer>
+        <section class="shop-section">
+            <h2>Convenient Ways to Shop</h2>
+
+            <div class="shop-container">
+
+                <div class="shop-item">
+                    <i class="ri-calendar-line"></i>
+                    <h3>ON SCHEDULE</h3>
+                    <p class="title">Autoshop</p>
+                    <p class="desc">35% OFF first order & 5% OFF future orders</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-door-open-line"></i>
+                    <h3>FAST & FREE</h3>
+                    <p class="title">Same-Day Delivery</p>
+                    <p class="desc">Get your order right when you need it</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-car-line"></i>
+                    <h3>2 HRS OR LESS</h3>
+                    <p class="title">Store Pickup</p>
+                    <p class="desc">FREE pickup ready in 2 hours or less</p>
+                </div>
+
+                <div class="shop-item">
+                    <i class="ri-truck-line"></i>
+                    <h3>1–3 DAYS</h3>
+                    <p class="title">Ship to Home</p>
+                    <p class="desc">FREE Shipping on select orders $49+</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="footer-links">
+            <div class="col">
+                <a href="#">Pet Services</a>
+                <a href="#">Help Center</a>
+                <a href="#">Treats Rewards program</a>
+            </div>
+
+            <div class="col">
+                <a href="#">Track your order</a>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">PetSmart Charities</a>
+            </div>
+
+            <div class="col">
+                <a href="#">US Site</a>
+                <a href="#">Canada Site</a>
+                <a href="#">Africa Site</a>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-line"></i>
+            <i class="ri-twitter-x-line"></i>
+            <i class="ri-tiktok-line"></i>
+            <i class="ri-youtube-line"></i>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2025 PetSmart LLC</p>
+            <div class="bottom-links">
+                <a href="#">Recalls</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Interest-Based Ads</a>
+                <a href="#">CA Supply Chain Act</a>
+                <a href="#">CA Privacy Rights</a>
+                <a href="#">Your Privacy Choices</a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.html"></script>
+</body>
+
+</html>

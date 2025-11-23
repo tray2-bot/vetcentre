@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Center</title>
+
+  <!-- ICON LIBRARIES -->
+  <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
+      <h1>VetCare Center</h1>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="top-right" id="desktopMenu">
+
+      <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="shop.html"><i class="ri-shopping-bag-3-line"></i> Shop</a>
+        <div class="dropdown-content">
+          <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+          <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+          <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+          <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+          <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+        </div>
+      </div>
+
+      <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+      <div class="dropdown">
+        <a href="consult.html"><i class="ri-stethoscope-line"></i> Consult a Vet</a>
+        <div class="dropdown-content">
+          <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+        </div>
+      </div>
+
+      <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+      <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+    </div>
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <!-- CART IN MOBILE -->
+
+    <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-shopping-bag-3-line"></i> Shop</button>
+      <div class="mobile-dropdown-content">
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> Dogs</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> Cat</a>
+        <a href="sea animal.html"><i class="fa-solid fa-fish-fins"></i> Fish</a>
+        <a href="farm animals.html"><i class="fa-solid fa-cow"></i> Farm Animals</a>
+        <a href="shop.html"><i class="fa-solid fa-boxes-packing"></i> Supplies</a>
+      </div>
+    </div>
+
+    <a href="register.html"><i class="ri-user-add-line"></i> Register</a>
+
+    <div class="mobile-dropdown">
+      <button><i class="ri-stethoscope-line"></i> Consult a Vet</button>
+      <div class="mobile-dropdown-content">
+        <a href="pharmacy.html"><i class="fa-solid fa-house-medical"></i> Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="contact.html"><i class="ri-mail-send-line"></i> Contact Us</a>
+    <a href="about.html"><i class="ri-information-line"></i> About Us</a>
+
+  </div>
+
+  <!-- MAIN HEADER (SEARCH + ICONS) -->
+  <header class="main-header">
+    <div class="search-area">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
+        <button id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+     <!-- CART - note the id used by JS -->
+      <div class="cart" id="cartIcon" title="Open cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+  <!-- Banner -->
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-text">
+        <div class="small">Everything for</div>
+        <h1 class="big">Farm Animals</h1>
+      </div>
+
+      <!-- right-side hero cat (replace src) -->
+      <img class="hero-cat" src="farm header.png" alt="cat" />
+    </div>
+  </header>
+
+  <!-- Categories row -->
+  <section class="categories">
+    <div class="category card green">
+      <div class="cat-text">
+        <h3>Pig treats</h3>
+      </div>
+      <img class="cat-image" src="farm treat.png" alt="treats">
+    </div>
+
+    <div class="category card blue">
+      <div class="cat-text">
+        <h3>Horse Snacks</h3>
+      </div>
+      <img class="cat-image" src="farm litter.png" alt="litter">
+    </div>
+
+    <div class="category card purple">
+      <div class="cat-text">
+        <h3>Sheep Feeds</h3>
+      </div>
+      <img class="cat-image" src="farm play.png" alt="toys">
+    </div>
+  </section>
+
+  <!-- ================= FARM CATEGORY ================= -->
+<section class="category">
+    <h2>Food</h2>
+</section>
+
+<div class="product-grid" id="productGrid">
+    <div class="wet-product" data-id="f1" data-title="NATURAL FARM Farm Raised Grain Digestible Free" data-price="5000">
+        <div class="img-box">
+            <img src="NATURAL FARM Farm Raised Grain Digestible Free.png" alt="Farm Raised Grain">
+        </div>
+        <h3 class="wet-title">NATURAL FARM Farm Raised Grain Digestible</h3>
+        <div class="price-and-cart">
+            <p class="price">₦5,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f2" data-title="Canadian Timothy Hay Baby Bale" data-price="6000">
+        <div class="img-box">
+            <img src="Canadian Timothy Hay Baby Bale.png" alt="Timothy Hay">
+        </div>
+        <h3 class="wet-title">Canadian Timothy Hay Baby Bale</h3>
+        <div class="price-and-cart">
+            <p class="price">₦6,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f3" data-title="Sheep Unique Wollepellets" data-price="5000">
+        <div class="img-box">
+            <img src="SHEEP UNIQUE Wollepellets.png" alt="Sheep Wollepellets">
+        </div>
+        <h3 class="wet-title">Sheep Unique Wollepellets</h3>
+        <div class="price-and-cart">
+            <p class="price">₦5,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f4" data-title="Purina Pelleted Duck Feed" data-price="8000">
+        <div class="img-box">
+            <img src="Purina Pelleted Duck Feed.png" alt="Duck Feed">
+        </div>
+        <h3 class="wet-title">Purina Pelleted Duck Feed</h3>
+        <div class="price-and-cart">
+            <p class="price">₦8,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f5" data-title="Nutrena NatureWise All Flock Pelleted Poultry Feed" data-price="4000">
+        <div class="img-box">
+            <img src="Nutrena NatureWise All Flock Pelleted Poultry Feed.png" alt="Poultry Feed">
+        </div>
+        <h3 class="wet-title">Nutrena NatureWise All Flock Pelleted Poultry</h3>
+        <div class="price-and-cart">
+            <p class="price">₦4,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f6" data-title="Standlee Organic Alfalfa Pellets" data-price="7000">
+        <div class="img-box">
+            <img src="Standlee Organic Alfalfa Pellets.png" alt="Alfalfa Pellets">
+        </div>
+        <h3 class="wet-title">Standlee Organic Alfalfa Pellets</h3>
+        <div class="price-and-cart">
+            <p class="price">₦7,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="wet-product" data-id="f7" data-title="Ambos All Purpose Horse & Livestock Pellet Food" data-price="8000">
+        <div class="img-box">
+            <img src="Ambos All Purpose Horse & Livestock Pellet Food.png" alt="Horse & Livestock Pellet Food">
+        </div>
+        <h3 class="wet-title">Ambos All Purpose Horse & Livestock Pellet</h3>
+        <div class="price-and-cart">
+            <p class="price">₦8,000</p>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+    <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="slide-cart" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Shopping Cart <span id="panelItemCount" class="item-count">0</span></h2>
+      <button class="close-cart" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- JS will inject cart items here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="subtotal-row">
+        <p class="subtotal-label">SUBTOTAL:</p>
+        <p class="subtotal-amount" id="subtotalAmount">₦0</p>
+      </div>
+
+      <a href="#" class="coupon-link">Have a Coupon?</a>
+
+      <div class="cart-buttons">
+        <button class="view-cart-btn">VIEW CART</button>
+        <button class="checkout-btn">CHECKOUT →</button>
+      </div>
+    </div>
+  </aside>
+
+
+  <!-- Search Results -->
+  <section id="searchResults" class="results hidden">
+    <h3>Search Results</h3>
+    <ul id="resultList"></ul>
+  </section>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
