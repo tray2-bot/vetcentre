@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VetCare Center</title>
-
-  <!-- ICON LIBRARIES -->
   <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="top-left">
       <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
       <h1>VetCare Center</h1>
     </div>
 
-    <!-- MOBILE MENU BUTTON -->
     <div class="menu-btn" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <!-- DESKTOP MENU -->
     <div class="top-right" id="desktopMenu">
 
       <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
@@ -58,10 +50,8 @@
     </div>
   </div>
 
-  <!-- MOBILE SLIDE-IN MENU -->
   <div class="mobile-menu" id="mobileMenu">
 
-    <!-- CART IN MOBILE -->
 
     <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
 
@@ -90,14 +80,12 @@
 
   </div>
 
-  <!-- MAIN HEADER (SEARCH + ICONS) -->
   <header class="main-header">
     <div class="search-area">
       <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
         <button id="searchBtn"><i class="ri-search-line"></i></button>
       </div>
-     <!-- CART - note the id used by JS -->
       <div class="cart" id="cartIcon" title="Open cart">
         <i class="ri-shopping-cart-line"></i>
         <span class="cart-count" id="cartCount">0</span>
@@ -105,8 +93,7 @@
     </div>
   </header>
 
-    <!-- HEADER BANNER -->
-    <!-- Banner -->
+
     <header class="banner">
       <div class="banner-inner">
         <div class="banner-text">
@@ -114,12 +101,10 @@
           <h1 class="big">Cats</h1>
         </div>
 
-        <!-- right-side hero cat (replace src) -->
         <img class="hero-cat" src="cat header.png" alt="cat" />
       </div>
     </header>
 
-    <!-- Categories row -->
     <section class="categories">
       <div class="category cardss green">
         <div class="cat-text">
@@ -144,10 +129,6 @@
     </section>
 
 
-
-<!-- ================================
-         1. Wet Food
-================================ -->
 <section class="category">
   <h2 class="section-title">Wet Food</h2>
 </section>
@@ -217,9 +198,6 @@
   </div>
 </div>
 
-<!-- ================================
-         2. Dry Food
-================================ -->
 <section class="category">
   <h2 class="section-title">Dry Food</h2>
 </section>
@@ -289,9 +267,7 @@
   </div>
 </div>
 
-<!-- ================================
-         3. Treats & Toys
-================================ -->
+
 <section class="category">
   <h2 class="section-title">Treats & Toys</h2>
 </section>
@@ -360,9 +336,6 @@
   </div>
 </div>
 
-<!-- ================================
-         4. Pet Clothing / Outfits
-================================ -->
 <section class="category">
   <h2 class="section-title">Pet Clothing & Outfits</h2>
 </section>
@@ -433,7 +406,6 @@
 </div>
 
 
-      <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
   <div class="cart-overlay" id="cartOverlay"></div>
 
   <aside class="slide-cart" id="cartPanel" aria-hidden="true">
@@ -443,7 +415,6 @@
     </div>
 
     <div class="cart-items" id="cartItems">
-      <!-- JS will inject cart items here -->
     </div>
 
     <div class="cart-footer">
@@ -462,7 +433,6 @@
   </aside>
 
 
-               <!-- Search Results -->
   <section id="searchResults" class="results hidden">
     <h3>Search Results</h3>
     <ul id="resultList"></ul>

@@ -4,29 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VetCare Center</title>
-
-  <!-- ICON LIBRARIES -->
   <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="top-left">
       <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
       <h1>VetCare Center</h1>
     </div>
 
-    <!-- MOBILE MENU BUTTON -->
     <div class="menu-btn" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <!-- DESKTOP MENU -->
     <div class="top-right" id="desktopMenu">
 
       <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
@@ -57,10 +51,8 @@
     </div>
   </div>
 
-  <!-- MOBILE SLIDE-IN MENU -->
   <div class="mobile-menu" id="mobileMenu">
 
-    <!-- CART IN MOBILE -->
 
     <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
 
@@ -89,14 +81,12 @@
 
   </div>
 
-  <!-- MAIN HEADER (SEARCH + ICONS) -->
   <header class="main-header">
     <div class="search-area">
       <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
         <button id="searchBtn"><i class="ri-search-line"></i></button>
       </div>
-      <!-- CART - note the id used by JS -->
       <div class="cart" id="cartIcon" title="Open cart">
         <i class="ri-shopping-cart-line"></i>
         <span class="cart-count" id="cartCount">0</span>
@@ -104,8 +94,6 @@
     </div>
   </header>
 
-  <!-- HEADER BANNER -->
-  <!-- Banner -->
   <header class="banner">
     <div class="banner-inner">
       <div class="banner-text">
@@ -113,12 +101,10 @@
         <h1 class="big">Dogs</h1>
       </div>
 
-      <!-- right-side hero cat (replace src) -->
       <img class="hero-cat" src="dog header.png" alt="cat" />
     </div>
   </header>
 
-  <!-- Categories row -->
   <section class="categories">
     <div class="category card green">
       <div class="cat-text">
@@ -142,10 +128,6 @@
     </div>
   </section>
 
-  <!-- =====================================================
-                     WET FOOD (7 ITEMS)
-===================================================== -->
-  <!-- PRODUCT GRID (wet food sample items) -->
   <section class="category">
     <h2 class="section-title">Wet Food</h2>
   </section>
@@ -212,9 +194,6 @@
     </div>
   </div>
 
-  <!-- ===========================
-     DRY FOOD (7 items)
-=========================== -->
   <section class="category">
     <h2>Dry Food</h2>
   </section>
@@ -292,9 +271,6 @@
     </div>
   </div>
 
-  <!-- ===========================
-     TREATS (7 items)
-=========================== -->
   <section class="category">
     <h2>Treats</h2>
   </section>
@@ -371,9 +347,6 @@
     </div>
   </div>
 
-  <!-- ===========================
-     BEDS & LITTERS (7 items)
-=========================== -->
   <section class="category">
     <h2>Beds & Litters</h2>
   </section>
@@ -447,9 +420,6 @@
     </div>
   </div>
 
-  <!-- ===========================
-     TOYS (7 items)
-=========================== -->
   <section class="category">
     <h2>Toys</h2>
   </section>
@@ -520,15 +490,11 @@
     </div>
   </div>
 
-  <!-- ===========================
-     LEASH & COLLARS (opening)
-=========================== -->
   <section class="category">
     <h2>Leash & Collars</h2>
   </section>
 
   <div class="product-grid">
-    <!-- add leash & collar items here (I left this empty like you did) -->
     <div class="wet-product" data-id="l1" data-title="Hepper Hemp Breakaway Cat Collar" data-price="6000">
       <div class="img-box"><img src="Hepper Hemp Breakaway Cat Collar.png" alt=""></div>
       <h3 class="wet-title">Hepper Hemp Breakaway Cat Collar</h3>
@@ -656,7 +622,6 @@
       </div>
     </div>
 
-    <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
     <div class="cart-overlay" id="cartOverlay"></div>
 
     <aside class="slide-cart" id="cartPanel" aria-hidden="true">
@@ -666,7 +631,6 @@
       </div>
 
       <div class="cart-items" id="cartItems">
-        <!-- JS will inject cart items here -->
       </div>
 
       <div class="cart-footer">

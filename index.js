@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* --------- SLIDER --------- */
+  /* ---------INDEX SLIDER --------- */
   const slides = document.querySelectorAll('.slide');
   let slideIndex = 0;
 
@@ -11,13 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   setInterval(showNextSlide, 5000);
-
-  /* -- DEV animation replay on phone click -- */
   const phone = document.querySelector('.chat');
   if (phone) {
     phone.addEventListener('click', () => {
       phone.classList.remove('animate');
-      void phone.offsetWidth; // trigger reflow
+      void phone.offsetWidth; 
       phone.classList.add('animate');
     });
   }
@@ -41,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* --------- TABS --------- */
+  /* --------- TABLET --------- */
   const tabs = document.querySelectorAll('.petstab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
 
@@ -59,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* --------- REGISTER FORM --------- */
+  /* --------- REGISTER & CONSULTATION FORM --------- */
   const petGender = document.getElementById('petGender');
   const pregnantSection = document.getElementById('pregnantSection');
   const petForm = document.getElementById('petForm');
@@ -129,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const panelItemCount = document.getElementById('panelItemCount');
   const subtotalAmount = document.getElementById('subtotalAmount');
 
-  // Load cart from localStorage or init empty
   let cart = {};
   const savedCart = localStorage.getItem('myCart');
   if (savedCart) {
@@ -192,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.appendChild(itemEl);
     });
 
-    // Attach qty decrement buttons
     cartItemsContainer.querySelectorAll('.qty-decr').forEach(btn => {
       btn.addEventListener('click', e => {
         const id = e.currentTarget.dataset.id;
@@ -202,7 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Attach qty increment buttons
     cartItemsContainer.querySelectorAll('.qty-incr').forEach(btn => {
       btn.addEventListener('click', e => {
         const id = e.currentTarget.dataset.id;
@@ -212,7 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Attach remove item buttons
     cartItemsContainer.querySelectorAll('.remove-item').forEach(btn => {
       btn.addEventListener('click', e => {
         const id = e.currentTarget.dataset.id;
@@ -222,7 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Save cart to localStorage after every UI update
     localStorage.setItem('myCart', JSON.stringify(cart));
   }
 
@@ -261,7 +254,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cartOverlay.addEventListener('click', closeCart);
   }
 
-  // Add to cart buttons
   document.querySelectorAll('.add-cart').forEach(btn => {
     btn.addEventListener('click', e => {
       const card = e.currentTarget.closest('.wet-product');
@@ -284,6 +276,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Initialize cart UI on page load
   recalcUI();
 });

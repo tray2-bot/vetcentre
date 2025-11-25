@@ -5,29 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VetCare Center</title>
-
-  <!-- ICON LIBRARIES -->
   <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="top-left">
       <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
       <h1>VetCare Center</h1>
     </div>
 
-    <!-- MOBILE MENU BUTTON -->
     <div class="menu-btn" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <!-- DESKTOP MENU -->
     <div class="top-right" id="desktopMenu">
 
       <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
@@ -58,10 +52,7 @@
     </div>
   </div>
 
-  <!-- MOBILE SLIDE-IN MENU -->
   <div class="mobile-menu" id="mobileMenu">
-
-    <!-- CART IN MOBILE -->
 
     <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
 
@@ -90,22 +81,19 @@
 
   </div>
 
-  <!-- MAIN HEADER (SEARCH + ICONS) -->
   <header class="main-header">
     <div class="search-area">
       <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
         <button id="searchBtn"><i class="ri-search-line"></i></button>
       </div>
-     <!-- CART - note the id used by JS -->
-      <div class="cart" id="cartIcon" title="Open cart">
+]      <div class="cart" id="cartIcon" title="Open cart">
         <i class="ri-shopping-cart-line"></i>
         <span class="cart-count" id="cartCount">0</span>
       </div>
     </div>
   </header>
 
-    <!-- Banner -->
     <header class="banner">
       <div class="banner-inner">
         <div class="banner-text">
@@ -113,12 +101,10 @@
           <h1 class="big">Fish</h1>
         </div>
 
-        <!-- right-side hero cat (replace src) -->
-        <img class="hero-cat" src="sea header.png" alt="cat"/>
+]        <img class="hero-cat" src="sea header.png" alt="cat"/>
       </div>
     </header>
 
-    <!-- Categories row -->
     <section class="categories">
       <div class="category card green">
         <div class="cat-text">
@@ -142,13 +128,11 @@
       </div>
     </section>
 
-<!-- Section 1: Fish Feeds -->
 <section class="category">
   <h2 class="section-title">Feeds</h2>
 </section>
 
 <div class="product-grid" id="feedsGrid">
-  <!-- Product 1 -->
   <div class="wet-product" data-id="f1" data-title="King British Goldfish Flake Food" data-price="5000">
     <div class="img-box">
       <img src="King British Goldfish Flake Food.png" alt="King British Goldfish Flake Food">
@@ -160,7 +144,6 @@
     </div>
   </div>
 
-  <!-- Product 2 -->
   <div class="wet-product" data-id="f2" data-title="Swell Freeze Dried Kril" data-price="6000">
     <div class="img-box">
       <img src="Swell Freeze Dried Kril.png" alt="Swell Freeze Dried Kril">
@@ -172,7 +155,6 @@
     </div>
   </div>
 
-  <!-- Product 3 -->
   <div class="wet-product" data-id="f3" data-title="Ração Tropical Green Algae Wafers" data-price="7000">
     <div class="img-box">
       <img src="Ração Tropical Green Algae Wafers.png" alt="Ração Tropical Green Algae Wafers">
@@ -184,7 +166,6 @@
     </div>
   </div>
 
-  <!-- Product 4 -->
   <div class="wet-product" data-id="f4" data-title="Nord Port Herring Pieces Original" data-price="6000">
     <div class="img-box">
       <img src="Herring Pieces Original.png" alt="Nord Port Herring Pieces Original">
@@ -196,7 +177,6 @@
     </div>
   </div>
 
-  <!-- Product 5 -->
   <div class="wet-product" data-id="f5" data-title="Premium quality frozen mysis shrimp" data-price="4000">
     <div class="img-box">
       <img src="Premium quality frozen mysis shrimp.png" alt="Premium quality frozen mysis shrimp">
@@ -209,13 +189,11 @@
   </div>
 </div>
 
-<!-- Section 2: Aquarium & Accessories -->
 <section class="category">
   <h2 class="section-title">Treats & Accessories</h2>
 </section>
 
 <div class="product-grid" id="treatsGrid">
-  <!-- Product 1 -->
   <div class="wet-product" data-id="t1" data-title="Powkoo Small Sponge Filter" data-price="4000">
     <div class="img-box">
       <img src="Powkoo Small Sponge Filter.png" alt="Powkoo Small Sponge Filter">
@@ -227,7 +205,6 @@
     </div>
   </div>
 
-  <!-- Product 2 -->
   <div class="wet-product" data-id="t2" data-title="Aquarium Full Spectrum LED Light" data-price="5000">
     <div class="img-box">
       <img src="Aquarium Full Spectrum LED.png" alt="Aquarium Full Spectrum LED Light">
@@ -239,7 +216,6 @@
     </div>
   </div>
 
-  <!-- Product 3 -->
   <div class="wet-product" data-id="t3" data-title="Aquario Neo Black - Water Conditioner" data-price="6000">
     <div class="img-box">
       <img src="Aquario Neo Black - Water Conditioner.png" alt="Aquario Neo Black - Water Conditioner">
@@ -251,7 +227,6 @@
     </div>
   </div>
 
-  <!-- Product 4 -->
    <div class="wet-product" data-id="t4" data-title="Acrylic Aquarium" data-price="3000">
     <div class="img-box">
       <img src="acrylic aquarium.png" alt="Acrylic Aquarium">
@@ -264,7 +239,6 @@
   </div>
 </div>
 
-      <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
   <div class="cart-overlay" id="cartOverlay"></div>
 
   <aside class="slide-cart" id="cartPanel" aria-hidden="true">
@@ -274,7 +248,6 @@
     </div>
 
     <div class="cart-items" id="cartItems">
-      <!-- JS will inject cart items here -->
     </div>
 
     <div class="cart-footer">
@@ -294,7 +267,6 @@
 
     
 
-               <!-- Search Results -->
   <section id="searchResults" class="results hidden">
     <h3>Search Results</h3>
     <ul id="resultList"></ul>

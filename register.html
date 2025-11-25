@@ -5,29 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VetCare Center</title>
-
-  <!-- ICON LIBRARIES -->
   <script src="https://kit.fontawesome.com/31db87b217.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="top-left">
       <img src="logo-removebg-preview (1).png" alt="VetCare Logo" class="small-logo">
       <h1>VetCare Center</h1>
     </div>
 
-    <!-- MOBILE MENU BUTTON -->
     <div class="menu-btn" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <!-- DESKTOP MENU -->
     <div class="top-right" id="desktopMenu">
 
       <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
@@ -58,10 +52,8 @@
     </div>
   </div>
 
-  <!-- MOBILE SLIDE-IN MENU -->
   <div class="mobile-menu" id="mobileMenu">
 
-    <!-- CART IN MOBILE -->
 
     <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
 
@@ -90,14 +82,12 @@
 
   </div>
 
-  <!-- MAIN HEADER (SEARCH + ICONS) -->
   <header class="main-header">
     <div class="search-area">
       <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for animals, food, or accessories...">
         <button id="searchBtn"><i class="ri-search-line"></i></button>
       </div>
-     <!-- CART - note the id used by JS -->
       <div class="cart" id="cartIcon" title="Open cart">
         <i class="ri-shopping-cart-line"></i>
         <span class="cart-count" id="cartCount">0</span>
@@ -241,7 +231,6 @@
   </div>
 
 
-    <!-- ========= SLIDE-OUT CART (INSERTED) ========= -->
   <div class="cart-overlay" id="cartOverlay"></div>
 
   <aside class="slide-cart" id="cartPanel" aria-hidden="true">
@@ -251,7 +240,6 @@
     </div>
 
     <div class="cart-items" id="cartItems">
-      <!-- JS will inject cart items here -->
     </div>
 
     <div class="cart-footer">
